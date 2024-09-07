@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="../assets/logo/dodemy.svg" type="image/svg" />
   </head>
   <body>
     <header class="sticky top-0 w-full max-w-screen align-middle bg-white">
@@ -41,17 +42,18 @@
 
         <!-- Nav Links -->
         <ul class="flex flex-row gap-14 font-manrope font-semibold text-sm">
-          <a href=""><li>Beranda</li></a>
-          <a href=""><li>Dashboard</li></a>
-          <a href=""><li>Jelajah</li></a>
+          <li><a href="">Beranda</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Jelajah</a></li>
         </ul>
 
         <!-- Login button -->
-        <button
+        <a
+          href="./auth/login.html"
           class="font-manrope font-semibold text-sm py-2 px-6 border border-black rounded-full hover:bg-gray-200"
         >
           Masuk
-        </button>
+        </a>
       </nav>
     </header>
 
@@ -83,29 +85,32 @@
                 Lebih Detail
               </div>
             </a>
-            <a href=""
-              ><div
-                class="flex gap-5 w-full justify-end py-2 pl-8 pr-2 rounded-full bg-[#CCFD56] text-[#7C57FD] font-manrope font-semibold text-[14px] items-center"
-              >
-                <p>Daftar</p>
-                <div class="rounded-full p-1 bg-[#7C57FD]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
-                      fill="#CCFD56"
-                    />
-                  </svg>
-                </div></div
-            ></a>
+            <a
+              href="./auth/register.html"
+              class="flex gap-5 w-full justify-end py-2 pl-8 pr-2 rounded-full bg-[#CCFD56] text-[#7C57FD] font-manrope font-semibold text-[14px] items-center"
+            >
+              <p>Daftar</p>
+              <div class="rounded-full p-1 bg-[#7C57FD]">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
+                    fill="#CCFD56"
+                  />
+                </svg>
+              </div>
+              ></a
+            >
           </div>
           <!-- Info -->
-          <div class="flex w-full max-w-[500px] items-center gap-6 justify-start">
+          <div
+            class="flex w-full max-w-[500px] items-center gap-6 justify-start"
+          >
             <div class="flex flex-col gap-3 text-center font-manrope">
               <p class="text-6xl text-white">10RB</p>
               <p class="text-2xl text-[#CBBCFE]">Pengguna <br />Senang</p>
