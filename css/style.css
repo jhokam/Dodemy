@@ -9,24 +9,13 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 ::-webkit-scrollbar {
   display: none;
   width: 10px;
 }
-
-/* ::-webkit-scrollbar-track {
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #7C57FD;
-} */
 
 /* .font-manrope {
   font-family: "Manrope", sans-serif;
@@ -57,7 +46,8 @@ html {
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 20px 0;
+  margin-top: 32px;
   background-color: inherit;
   white-space: nowrap;
 }
