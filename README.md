@@ -1,11 +1,12 @@
 # Dodemy
 
-Dodemy is a place to learn whatever you like
+Dodemy! "Everywhere and Anytime” is a LMS (Learning Management System) that we (3 Person with a 1 Mentor) build to competiting in INVENTION UDAYANA 2024
 
 ## Authors
 
-- [@jhokam](https://www.github.com/jhokam)
+- [@jhokam](https://github.com/jhokam)
 - [@hnifalii](https://github.com/hnifalii)
+- [@mooooimo](https://instagram.com/mooooimo) Instagram
 
 ## Demo
 
@@ -14,6 +15,15 @@ Dodemy is a place to learn whatever you like
 ## Tech Stack
 
 HTML, CSS, TailwindCSS (CDN), Javascript
+
+## Route
+
+`/`
+`/404.html`
+`/dashboard`
+`/auth/register.html`
+`/auth/login.html`
+`/auth/forgot-password.html`
 
 ## Run Locally
 
@@ -37,4 +47,12 @@ Start the live server
 
 ## Screenshots
 
-Not Yet
+![Landing Page Image](./github/landing-page.png)
+
+![Login Page Image](./github/login-page.png)
+
+![404 Page Image](./github/404-page.png)
+
+![Forgot Password Page](./github/forgot-password-page.png)
+
+![Register Page](./github/register-page.png)
