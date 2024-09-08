@@ -62,7 +62,7 @@
       <!-- Hero -->
       <section id="hero">
         <div
-          class="bg-[#7C57FD] flex mx-6 rounded-[30px] p-12 items-center shadow"
+          class="bg-[#7C57FD] flex mx-6 rounded-[30px] p-12 items-center shadow justify-evenly"
         >
           <div class="flex flex-col gap-14 max-w-[700px]">
             <!-- Main text -->
@@ -88,7 +88,7 @@
               </a>
               <a href=""
                 ><div
-                  class="flex gap-5 w-full justify-end py-2 pl-8 pr-2 rounded-full bg-[#CCFD56] text-[#7C57FD] font-semibold text-[14px] items-center"
+                  class="flex gap-5 justify-end py-2 pl-8 pr-2 rounded-full bg-[#CCFD56] text-[#7C57FD] font-semibold text-[14px] items-center"
                 >
                   Daftar
                   <div class="rounded-full p-1 bg-[#7C57FD]">
@@ -135,8 +135,11 @@
       </section>
 
       <!-- Running text -->
-      <div class="logos z-0">
-        <div class="inline-flex logos-slide">
+      <div class="logos z-0 overflow-hidden">
+        <div class="inline-flex logos-slide w-max">
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
           <img src="/assets/logos/google.svg" />
           <img src="/assets/logos/kemendikbud.svg" />
           <img src="/assets/logos/ruangguru.svg" />
@@ -144,7 +147,10 @@
           <img src="/assets/logos/kemendikbud.svg" />
           <img src="/assets/logos/ruangguru.svg" />
         </div>
-        <div class="inline-flex logos-slide">
+        <div class="inline-flex logos-slide w-max">
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
           <img src="/assets/logos/google.svg" />
           <img src="/assets/logos/kemendikbud.svg" />
           <img src="/assets/logos/ruangguru.svg" />
@@ -179,7 +185,7 @@
                 >
                   <h4 class="text-lg font-semibold text-[#7C57FD]">01</h4>
                   <h1 class="text-4xl font-semibold leading-[52px]">
-                    Evaluasi Kesalahan Anda Setiap Hari
+                    Evaluasi Kesalahan Anda
                   </h1>
                   <p class="text-[#6F6C78] font-medium">
                     Dengan bank soal Dodemy, kamu akan lebih cepat menguasai
@@ -204,7 +210,7 @@
                 >
                   <h4 class="text-lg font-semibold text-[#7C57FD]">02</h4>
                   <h1 class="text-4xl font-semibold leading-[52px]">
-                    Berdiskusi Dengan Komunitas
+                    Berdiskusi dengan Komunitas
                   </h1>
                   <p class="text-[#6F6C78] font-medium">
                     Butuh bantuan? Tanyakan saja ke komunitas. Saling bertukar
@@ -328,7 +334,9 @@
           <h6 class="self-end mr-10 text-xs">Geser ></h6>
 
           <!-- Cards container -->
-          <div class="overflow-x-auto scroll-smooth snap-x snap-mandatory pr-20">
+          <div
+            class="overflow-x-auto scroll-smooth snap-x snap-mandatory pr-20"
+          >
             <div class="pl-16 flex gap-10 w-max">
               <!-- Card -->
               <div
@@ -368,14 +376,14 @@
                   class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
                 >
                   <h1 class="text-4xl font-semibold leading-[52px]">
-                    Bangun Ruang Kerucut
+                    Aritmatika <br />Dasar
                   </h1>
                   <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
-                    Mempelajari kerucut tidak hanya tentang mengenal bentuknya,
-                    tetapi juga tentang mengembangkan keterampilan pemecahan
-                    masalah dan berpikir kritis. Pengetahuan tentang kerucut
-                    dapat membantu kita dalam berbagai bidang, seperti teknik,
-                    arsitektur, dan bahkan seni.
+                    Aritmatika mencakup operasi dasar seperti penjumlahan,
+                    pengurangan, perkalian, dan pembagian. Dengan mempelajari
+                    aritmatika, kamu akan belajar bagaimana menghitung secara
+                    cepat dan akurat, yang sangat berguna dalam kehidupan
+                    sehari-hari, mulai dari berbelanja hingga mengatur anggaran
                   </p>
 
                   <!-- Profile -->
@@ -385,7 +393,7 @@
                         src="/assets/img/pak-rusdi.jpg"
                         alt=""
                         width="35px"
-                        class="rounded-full"
+                        class="rounded-full border"
                       />
                       <h4 class="text-sm font-semibold text-[#6F6C78]">
                         Rusdiyanto S. Pd.
@@ -430,7 +438,7 @@
               >
                 <div class="flex justify-between">
                   <img
-                    src="/assets/icons/math.svg"
+                    src="/assets/icons/kerucut.svg"
                     alt=""
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
@@ -441,7 +449,7 @@
                         class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
                       >
                         <span>⭐</span>
-                        <span>4,5</span>
+                        <span>4,7</span>
                       </div>
 
                       <div class="flex flex-col gap-3">
@@ -451,7 +459,7 @@
                         >
                         <span
                           class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
-                          >#1 Populer</span
+                          >#2 Populer</span
                         >
                       </div>
                     </div>
@@ -476,13 +484,13 @@
                   <a href="">
                     <div class="flex items-center gap-2">
                       <img
-                        src="/assets/img/pak-rusdi.jpg"
+                        src="/assets/img/joo-min-ten.jpg"
                         alt=""
                         width="35px"
-                        class="rounded-full"
+                        class="rounded-full border"
                       />
                       <h4 class="text-sm font-semibold text-[#6F6C78]">
-                        Rusdiyanto S. Pd.
+                        Joo Min-ten
                       </h4>
                     </div>
                   </a>
@@ -524,7 +532,7 @@
               >
                 <div class="flex justify-between">
                   <img
-                    src="/assets/icons/math.svg"
+                    src="/assets/icons/quantum.svg"
                     alt=""
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
@@ -535,17 +543,17 @@
                         class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
                       >
                         <span>⭐</span>
-                        <span>4,5</span>
+                        <span>4,7</span>
                       </div>
 
                       <div class="flex flex-col gap-3">
                         <span
                           class="py-1.5 px-3 rounded-full bg-[#E5DDFF] text-sm font-semibold text-[#7C57FD] border-[1.5px] border-[#7C57FD]"
-                          >Matematika</span
+                          >Fisika</span
                         >
                         <span
                           class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
-                          >#1 Populer</span
+                          >#3 Populer</span
                         >
                       </div>
                     </div>
@@ -556,27 +564,28 @@
                   class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
                 >
                   <h1 class="text-4xl font-semibold leading-[52px]">
-                    Bangun Ruang Kerucut
+                    Seputar Teori Kuantum
                   </h1>
                   <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
-                    Mempelajari kerucut tidak hanya tentang mengenal bentuknya,
-                    tetapi juga tentang mengembangkan keterampilan pemecahan
-                    masalah dan berpikir kritis. Pengetahuan tentang kerucut
-                    dapat membantu kita dalam berbagai bidang, seperti teknik,
-                    arsitektur, dan bahkan seni.
+                    Teori kuantum tidak hanya menantang cara kita memandang
+                    realitas, tetapi juga memiliki aplikasi luas dalam teknologi
+                    modern, dari komputer kuantum hingga komunikasi yang aman.
+                    Bersiaplah untuk menjelajahi konsep-konsep revolusioner yang
+                    akan membuka wawasan baru tentang bagaimana alam semesta
+                    bekerja pada tingkat paling fundamental!
                   </p>
 
                   <!-- Profile -->
                   <a href="">
                     <div class="flex items-center gap-2">
                       <img
-                        src="/assets/img/pak-rusdi.jpg"
+                        src="/assets/img/vin-petrol.jpg"
                         alt=""
                         width="35px"
-                        class="rounded-full"
+                        class="rounded-full border"
                       />
                       <h4 class="text-sm font-semibold text-[#6F6C78]">
-                        Rusdiyanto S. Pd.
+                        Vin Petrol
                       </h4>
                     </div>
                   </a>
@@ -618,7 +627,7 @@
               >
                 <div class="flex justify-between">
                   <img
-                    src="/assets/icons/math.svg"
+                    src="/assets/icons/palette.svg"
                     alt=""
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
@@ -629,17 +638,17 @@
                         class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
                       >
                         <span>⭐</span>
-                        <span>4,5</span>
+                        <span>4,2</span>
                       </div>
 
                       <div class="flex flex-col gap-3">
                         <span
                           class="py-1.5 px-3 rounded-full bg-[#E5DDFF] text-sm font-semibold text-[#7C57FD] border-[1.5px] border-[#7C57FD]"
-                          >Matematika</span
+                          >Seni Rupa</span
                         >
                         <span
                           class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
-                          >#1 Populer</span
+                          >#4 Populer</span
                         >
                       </div>
                     </div>
@@ -650,27 +659,25 @@
                   class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
                 >
                   <h1 class="text-4xl font-semibold leading-[52px]">
-                    Bangun Ruang Kerucut
+                    Menciptakan Karya Seni Lukis
                   </h1>
                   <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
-                    Mempelajari kerucut tidak hanya tentang mengenal bentuknya,
-                    tetapi juga tentang mengembangkan keterampilan pemecahan
-                    masalah dan berpikir kritis. Pengetahuan tentang kerucut
-                    dapat membantu kita dalam berbagai bidang, seperti teknik,
-                    arsitektur, dan bahkan seni.
+                    Siapkan kuasmu dan mari ciptakan karya seni yang
+                    menginspirasi! Temukan inspirasi dan biarkan imajinasimu
+                    mengalir bebas—ayo mulai petualangan kreatifmu sekarang!
                   </p>
 
                   <!-- Profile -->
                   <a href="">
                     <div class="flex items-center gap-2">
                       <img
-                        src="/assets/img/pak-rusdi.jpg"
+                        src="/assets/img/helena-chao.jpg"
                         alt=""
                         width="35px"
-                        class="rounded-full"
+                        class="rounded-full border"
                       />
                       <h4 class="text-sm font-semibold text-[#6F6C78]">
-                        Rusdiyanto S. Pd.
+                        Helena Chao
                       </h4>
                     </div>
                   </a>
@@ -766,14 +773,14 @@
                   <!-- User -->
                   <div class="flex items-center text-start gap-3">
                     <img
-                      src="/assets/img/hendrawan.png"
+                      src="/assets/img/cynthia.jpg"
                       alt=""
                       width="40px"
                       class="rounded-full"
                     />
                     <div class="flex flex-col">
-                      <h5 class="font-semibold">Hendrawan</h5>
-                      <h6 class="text-[10px] font-light">Siswa SMA</h6>
+                      <h5 class="font-semibold">Cynthia</h5>
+                      <h6 class="text-[10px] font-light">Siswi SMP</h6>
                     </div>
                   </div>
                   <!-- Rating -->
@@ -782,15 +789,15 @@
                       class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
                     >
                       <span>⭐</span>
-                      <span>4,5</span>
+                      <span>4,2</span>
                     </div>
                   </div>
                 </div>
                 <!-- Review contents -->
                 <p class="font-semibold text-start">
-                  “Tempat belajarnya bagus banget. Nilai ulangan jadi bagus
-                  setelah belajar di sini. Belajar jadi seru dan materi mudah
-                  dipahami. Apalagi komunitasnya pada ramah semua.”
+                  "Belajar di sini tuh super gampang! Platformnya keren banget,
+                  antarmuka friendly dan materi jelas. Aku bisa belajar sesuai
+                  waktu yang ku punya. Bener-bener recommended deh!"
                 </p>
               </div>
             </div>
@@ -804,14 +811,14 @@
                   <!-- User -->
                   <div class="flex items-center text-start gap-3">
                     <img
-                      src="/assets/img/hendrawan.png"
+                      src="/assets/img/ricardo.jpg"
                       alt=""
                       width="40px"
                       class="rounded-full"
                     />
                     <div class="flex flex-col">
-                      <h5 class="font-semibold">Hendrawan</h5>
-                      <h6 class="text-[10px] font-light">Siswa SMA</h6>
+                      <h5 class="font-semibold">Ricardo</h5>
+                      <h6 class="text-[10px] font-light">Mahasiswa</h6>
                     </div>
                   </div>
                   <!-- Rating -->
@@ -820,15 +827,16 @@
                       class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
                     >
                       <span>⭐</span>
-                      <span>4,5</span>
+                      <span>4,8</span>
                     </div>
                   </div>
                 </div>
                 <!-- Review contents -->
                 <p class="font-semibold text-start">
-                  “Tempat belajarnya bagus banget. Nilai ulangan jadi bagus
-                  setelah belajar di sini. Belajar jadi seru dan materi mudah
-                  dipahami. Apalagi komunitasnya pada ramah semua.”
+                  "Belajar di sini itu rasanya kayak ngobrol sama ahli langsung!
+                  Materi kursusnya top, dan pengajarnya jelas banget
+                  menjelasinya. Jadi, kalau kamu pengen belajar dengan cara yang
+                  seru dan bermanfaat, ini tempatnya!"
                 </p>
               </div>
             </div>
@@ -842,14 +850,14 @@
                   <!-- User -->
                   <div class="flex items-center text-start gap-3">
                     <img
-                      src="/assets/img/hendrawan.png"
+                      src="/assets/img/wenome.jpg"
                       alt=""
                       width="40px"
                       class="rounded-full"
                     />
                     <div class="flex flex-col">
-                      <h5 class="font-semibold">Hendrawan</h5>
-                      <h6 class="text-[10px] font-light">Siswa SMA</h6>
+                      <h5 class="font-semibold">Wenome</h5>
+                      <h6 class="text-[10px] font-light">Mahasiswa</h6>
                     </div>
                   </div>
                   <!-- Rating -->
@@ -864,9 +872,10 @@
                 </div>
                 <!-- Review contents -->
                 <p class="font-semibold text-start">
-                  “Tempat belajarnya bagus banget. Nilai ulangan jadi bagus
-                  setelah belajar di sini. Belajar jadi seru dan materi mudah
-                  dipahami. Apalagi komunitasnya pada ramah semua.”
+                  "Ini sangat cocok buat saya yang sibuk banget!
+                  Kursus-kursusnya dikemas dalam modul-modul pendek yang bisa
+                  dipelajari kapan saja. Nggak perlu ribet, tinggal klik dan
+                  belajar deh!"
                 </p>
               </div>
               <!-- Review card -->
@@ -877,14 +886,14 @@
                   <!-- User -->
                   <div class="flex items-center text-start gap-3">
                     <img
-                      src="/assets/img/hendrawan.png"
+                      src="/assets/img/agnes.jpg"
                       alt=""
                       width="40px"
                       class="rounded-full"
                     />
                     <div class="flex flex-col">
-                      <h5 class="font-semibold">Hendrawan</h5>
-                      <h6 class="text-[10px] font-light">Siswa SMA</h6>
+                      <h5 class="font-semibold">Agnes</h5>
+                      <h6 class="text-[10px] font-light">Siswi SMA</h6>
                     </div>
                   </div>
                   <!-- Rating -->
@@ -893,15 +902,16 @@
                       class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
                     >
                       <span>⭐</span>
-                      <span>4,5</span>
+                      <span>4,6</span>
                     </div>
                   </div>
                 </div>
                 <!-- Review contents -->
                 <p class="font-semibold text-start">
-                  “Tempat belajarnya bagus banget. Nilai ulangan jadi bagus
-                  setelah belajar di sini. Belajar jadi seru dan materi mudah
-                  dipahami. Apalagi komunitasnya pada ramah semua.”
+                  "Ini asyik banget! Materinya gampang dimengerti dan latihan yang
+                  bikin kita langsung bisa praktek. Dukungan dari
+                  pengajarnya juga cepat dan helpful. Seru banget bisa belajar
+                  di sini!"
                 </p>
               </div>
             </div>
@@ -917,7 +927,7 @@
         </h1>
 
         <!-- Plans -->
-        <div class="flex mt-10 mx-6 justify-between">
+        <div class="flex mt-10 mx-6 justify-evenly">
           <!-- Plan card -->
           <div
             class="flex flex-col w-full max-w-[380px] px-8 py-10 bg-white border-[1.5px] shadow rounded-2xl gap-8"
@@ -1112,12 +1122,31 @@
           <h1 class="text-4xl font-bold text-[#7C57FD] text-center">FAQ</h1>
           <div class="grid w-full mt-4 max-w-[800px]">
             <!-- FAQ Item -->
-            <div class="w-full max-w-[800px] border border-gray-200 rounded-lg">
+            <div
+              class="w-full relative max-w-[800px] border border-gray-200 rounded-lg"
+            >
               <button
-                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none"
+                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none flex justify-between items-center"
                 onclick="toggleFAQ(this)"
               >
-                <span class="text-gray-400 px-2">01</span> Apa itu Dodemy?
+                <div>
+                  <span class="text-gray-400 px-2">01</span> Apa itu Dodemy?
+                </div>
+
+                <svg
+                  class="w-4 h-4 text-gray-600 transition-transform duration-300 transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
               </button>
               <div
                 class="-mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0"
@@ -1138,23 +1167,41 @@
               class="w-full max-w-[800px] mt-8 border border-gray-200 rounded-lg"
             >
               <button
-                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none"
+                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none flex justify-between items-center"
                 onclick="toggleFAQ(this)"
               >
-                <span class="text-gray-400 px-2">02</span> Apa keunikan Dodemy
-                dibandingkan platform pembelajaran online lainnya?
+                <div>
+                  <span class="text-gray-400 px-2">02</span> Apa keunikan Dodemy
+                  dibandingkan platform pembelajaran online lainnya?
+                </div>
+
+                <svg
+                  class="w-4 h-4 text-gray-600 transition-transform duration-300 transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
               </button>
               <div
                 class="-mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0"
               >
                 <p class="pl-14 pr-14 py-4 text-gray-600 bg-white rounded-b-xl">
-                  Dodemy memiliki beberapa keunikan yaitu: <br>- Personalisasi
+                  Dodemy memiliki beberapa keunikan yaitu: <br />- Personalisasi
                   pembelajaran dengan bantuan AI (Personalisasi pembelajaran
-                  agar belajar dengan efektif) <br>- Semi-gamifikasi untuk
-                  meningkatkan motivasi belajar <br>- Aksesibilitas untuk pengguna
-                  dengan disabilitas (seperti text-to-speech dan speech-to-text)
-                  <br>- Kolaborasi dengan pemerintah (Kemendikbud) dan platform
-                  pendidikan lainnya untuk menyediakan kurikulum berkualitas
+                  agar belajar dengan efektif) <br />- Semi-gamifikasi untuk
+                  meningkatkan motivasi belajar <br />- Aksesibilitas untuk
+                  pengguna dengan disabilitas (seperti text-to-speech dan
+                  speech-to-text) <br />- Kolaborasi dengan pemerintah
+                  (Kemendikbud) dan platform pendidikan lainnya untuk
+                  menyediakan kurikulum berkualitas
                 </p>
               </div>
             </div>
@@ -1164,11 +1211,28 @@
               class="w-full max-w-[800px] mt-8 border border-gray-200 rounded-lg"
             >
               <button
-                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none"
+                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none flex justify-between items-center"
                 onclick="toggleFAQ(this)"
               >
-                <span class="text-gray-400 px-2">03</span> Apakah saya bisa
-                menggunakan Dodemy secara gratis?
+                <div>
+                  <span class="text-gray-400 px-2">03</span> Apakah saya bisa
+                  menggunakan Dodemy secara gratis?
+                </div>
+
+                <svg
+                  class="w-4 h-4 text-gray-600 transition-transform duration-300 transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
               </button>
               <div
                 class="-mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0"
@@ -1187,7 +1251,7 @@
     </main>
 
     <footer class="mt-28 grid">
-      <div class="flex justify-between px-8 py-10">
+      <div class="flex justify-between px-14 py-10">
         <div class="flex flex-col gap-4">
           <a
             href=""
@@ -1232,14 +1296,6 @@
             <a href="" class="text-gray-600 text-sm font-bold">Langganan</a>
             <a href="#faq" class="text-gray-600 text-sm font-bold">FAQ</a>
           </div>
-          <!-- Group 3 -->
-          <div class="flex flex-col gap-2">
-            <h2 class="font-bold text-xl mb-2">Kontak</h2>
-            <a href="" class="text-gray-600 text-sm font-bold">WA</a>
-            <a href="" class="text-gray-600 text-sm font-bold">IG</a>
-            <a href="" class="text-gray-600 text-sm font-bold">Gmail</a>
-            <a href="" class="text-gray-600 text-sm font-bold">Alamat</a>
-          </div>
         </div>
       </div>
       <h6
@@ -1248,9 +1304,21 @@
         DODEMY
       </h6>
       <div
-        class="flex py-8 px-8 border-t-[1.5px] text-sm text-gray-600 font-semibold justify-between"
+        class="flex py-8 px-14 border-t-[1.5px] text-sm text-gray-600 font-semibold justify-between"
       >
-        @Copyright 2024 Team Compee
+        @Copyright 2024 COMPEEE TEAM
+
+        <div class="flex gap-8">
+          <a href=""
+            ><img src="/assets/logos/gmail.svg" alt="" width="25px"
+          /></a>
+          <a href=""
+            ><img src="/assets/logos/instagram.svg" alt="" width="25px"
+          /></a>
+          <a href=""
+            ><img src="/assets/logos/whatsapp.svg" alt="" width="25px"
+          /></a>
+        </div>
         <div
           class="flex w-full max-w-max gap-8 text-sm text-gray-600 font-semibold"
         >

@@ -29,4 +29,8 @@ function toggleFAQ(button) {
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
   }
+
+  const arrowIcon = button.querySelector('svg');
+  arrowIcon.classList.toggle('rotate-90');
+  arrowIcon.classList.toggle('rotate-180');
 }
