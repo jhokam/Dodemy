@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register - Dodemy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/logo/dodemy.svg" type="image/svg" />
+  </head>
+  <body class="bg-gray-100 font-['Plus_Jakarta_Sans']">
+    <main class="flex min-h-screen items-center justify-center p-4">
+      <div
+        class="flex flex-col rounded-3xl bg-white p-8 border shadow-xl w-full max-w-md"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-2 items-center">
+            <img
+              src="../assets/logo/dodemy-purple.svg"
+              alt="Logo of Dodemy"
+              class="h-8 w-8"
+            />
+            <p class="font-semibold text-lg">Dodemy</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between py-6">
+          <h1 class="text-2xl font-semibold">Daftar</h1>
+          <a
+            class="font-semibold text-[#7C57FD] hover:underline"
+            href="./login.html"
+            >Login</a
+          >
+        </div>
+        <form class="flex flex-col space-y-4" action="" method="post">
+          <div>
+            <label class="font-semibold" for="name">Nama</label>
+            <input
+              autofocus
+              placeholder="John Doe"
+              class="mt-1 w-full rounded-3xl border border-[#9F9DA5] px-5 py-2.5 focus:border-[#7C57FD] focus:outline-none"
+              type="name"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <div>
+            <label class="font-semibold" for="email">Email</label>
+            <input
+              placeholder="example@domain.com"
+              class="mt-1 w-full rounded-3xl border border-[#9F9DA5] px-5 py-2.5 focus:border-[#7C57FD] focus:outline-none"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div>
+            <label class="font-semibold" for="password">Password</label>
+            <div
+              class="mt-1 flex rounded-3xl border border-[#9F9DA5] px-5 py-2.5 focus-within:border-[#7C57FD]"
+            >
+              <input
+                class="w-full pr-1 focus:outline-none"
+                placeholder="min. 8 karakter"
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                required
+              />
+              <button type="button" aria-label="Toggle password visibility">
+                <img
+                  src="../assets/icons/eye-slash.svg"
+                  alt=""
+                  class="h-5 w-5"
+                />
+              </button>
+            </div>
+          </div>
+          <div>
+            <label class="font-semibold" for="confirm-password"
+              >Konfirmasi Password</label
+            >
+            <div
+              class="mt-1 flex rounded-3xl border border-[#9F9DA5] px-5 py-2.5 focus-within:border-[#7C57FD]"
+            >
+              <input
+                class="w-full pr-1 focus:outline-none"
+                placeholder="min. 8 karakter"
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                minlength="8"
+                required
+              />
+              <button type="button" aria-label="Toggle password visibility">
+                <img
+                  src="../assets/icons/eye-slash.svg"
+                  alt=""
+                  class="h-5 w-5"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-between text-sm text-[#6F6C78] pt-2">
+            <a href="../404.html" class="hover:underline">Syarat & Ketentuan</a>
+            <a href="../404.html" class="hover:underline">Kebijakan Privasi</a>
+          </div>
+          <button
+            class="w-full rounded-3xl bg-[#7C57FD] py-3 text-white hover:bg-[#6A46E5] transition-colors"
+            type="submit"
+          >
+            Daftar
+          </button>
+        </form>
+        <div class="flex items-center justify-center space-x-3 py-5">
+          <div class="h-px flex-grow bg-[#D9D9D9]"></div>
+          <p class="text-[#B5B5B7]">atau</p>
+          <div class="h-px flex-grow bg-[#D9D9D9]"></div>
+        </div>
+        <a
+          href="../404.html"
+          class="flex items-center justify-center space-x-3 rounded-3xl border border-gray-300 bg-white py-3 font-semibold hover:bg-gray-50 transition-colors"
+        >
+          <img src="../assets/icons/google.svg" alt="" class="h-5 w-5" />
+          <span>Daftar dengan Google</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

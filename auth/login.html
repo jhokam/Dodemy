@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Dodemy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../assets/logo/dodemy.svg" type="image/svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-['Plus_Jakarta_Sans']">
+    <main class="flex min-h-screen items-center justify-center p-4">
+      <div
+        class="flex flex-col rounded-3xl bg-white p-8 shadow-xl w-full max-w-md border"
+      >
+        <div class="flex justify-between items-center mb-6">
+          <div class="flex space-x-2 items-center">
+            <img
+              src="../assets/logo/dodemy-purple.svg"
+              alt="Logo of Dodemy"
+              class="h-8 w-8"
+            />
+            <span class="font-semibold">Dodemy</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between mb-6">
+          <h1 id="masuk" class="text-2xl font-semibold">Masuk</h1>
+          <a
+            href="./register.html"
+            class="font-semibold text-[#7C57FD] hover:underline"
+            >Daftar</a
+          >
+        </div>
+
+        <form class="space-y-4" action="/login" method="post">
+          <div>
+            <label for="email" class="block font-semibold mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full rounded-3xl border border-[#9F9DA5] px-5 py-2.5 focus:border-[#7C57FD] focus:outline-none"
+              required
+              placeholder="example@domain.com"
+            />
+          </div>
+
+          <div>
+            <label for="password" class="block font-semibold mb-1"
+              >Password</label
+            >
+            <div
+              class="flex rounded-3xl border border-[#9F9DA5] px-5 py-2.5 focus-within:border-[#7C57FD]"
+            >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="w-full focus:outline-none"
+                required
+                placeholder="min. 8 karakter"
+              />
+              <button type="button" aria-label="Toggle password visibility">
+                <img
+                  src="../assets/icons/eye-slash.svg"
+                  alt="Toggle password visibility"
+                  class="h-5 w-5"
+                />
+              </button>
+            </div>
+          </div>
+
+          <a
+            href="./forgot-password.html"
+            class="block text-right font-semibold text-[#7C57FD] hover:underline"
+            >Lupa Sandi?</a
+          >
+
+          <button
+            type="submit"
+            class="block w-full rounded-3xl bg-[#7C57FD] py-3 text-white hover:bg-[#6A46E5] transition-colors"
+          >
+            Masuk
+          </button>
+        </form>
+
+        <div class="flex items-center justify-center space-x-3 py-5">
+          <div class="h-px flex-grow bg-[#D9D9D9]"></div>
+          <span class="text-gray-500">atau</span>
+          <div class="h-px flex-grow bg-[#D9D9D9]"></div>
+        </div>
+
+        <a
+          href="../404.html"
+          class="flex items-center justify-center space-x-2 w-full rounded-3xl border border-gray-300 bg-white py-3 hover:bg-gray-50 transition-colors"
+        >
+          <img
+            src="../assets/icons/google.svg"
+            alt="Logo Google"
+            class="h-5 w-5"
+          />
+          <span>Masuk dengan Google</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
