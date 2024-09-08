@@ -30,7 +30,7 @@ function toggleFAQ(button) {
     content.style.maxHeight = content.scrollHeight + "px";
   }
 
-  const arrowIcon = button.querySelector('svg');
+  const arrowIcon = button.querySelector('img');
   arrowIcon.classList.toggle('rotate-90');
   arrowIcon.classList.toggle('rotate-180');
 }
