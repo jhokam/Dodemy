@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dodemy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,16 +15,16 @@
     />
     <link rel="icon" href="../assets/logo/dodemy.svg" type="image/svg" />
   </head>
-  <body>
-    <header class="sticky top-0 w-full max-w-screen align-middle bg-white">
+  <body class="bg-[#F8F8F8]">
+    <header class="sticky top-0 w-full align-middle bg-[#F8F8F8] z-50">
       <nav class="flex flex-row w-full justify-between py-4 px-12 items-center">
         <!-- Logo -->
         <a
           href=""
-          class="flex items-center gap-2 font-jakarta font-bold text-2xl"
+          class="flex items-center gap-2 font-jakarta font-bold text-xl"
           ><svg
-            width="14"
-            height="24"
+            width="12"
+            height="22"
             viewBox="0 0 14 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -41,16 +42,18 @@
         >
 
         <!-- Nav Links -->
-        <ul class="flex flex-row gap-14 font-manrope font-semibold text-sm">
-          <li><a href="">Beranda</a></li>
-          <li><a href="./404.html">Dashboard</a></li>
-          <li><a href="">Jelajah</a></li>
+        <ul class="nav-links flex flex-row gap-14 font-semibold text-sm">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#features" class="nav-link">Fitur</a></li>
+          <li><a href="#courses" class="nav-link">Kelas</a></li>
+          <li><a href="#reviews" class="nav-link">Testimoni</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
 
         <!-- Login button -->
         <a
           href="./auth/login.html"
-          class="font-manrope font-semibold text-sm py-2 px-6 border border-black rounded-full hover:bg-gray-200"
+          class="font-semibold text-sm py-2 px-6 border border-black rounded-full hover:bg-gray-200"
         >
           Masuk
         </a>
@@ -59,81 +62,1272 @@
 
     <main>
       <!-- Hero -->
-      <div
-        class="bg-[#7C57FD] flex mx-6 rounded-[30px] p-12 items-center font-manrope"
-      >
-        <!-- Section -->
-        <div class="flex flex-col gap-14">
-          <!-- Main texts -->
-          <div class="flex flex-col gap-5">
-            <p class="text-[#CBBCFE]">Selamat Datang!</p>
-            <h1 class="text-white text-[70px] font-bold leading-tight">
-              <span class="text-[#CCFD56]">Berkembang</span> &
-              <span class="text-[#CCFD56]">Belajar</span> di Dodemy
-            </h1>
-            <p class="text-[#CBBCFE] text-[22px]">
-              Dodemy menyediakan layanan untuk membantu Anda mengembangkan
-              kemampuan penting untuk masa depan
-            </p>
-          </div>
-          <!-- Button group -->
-          <div class="flex gap-4">
-            <a href=""
-              ><div
-                class="py-3 px-7 border rounded-full border-[#CCFD56] text-[#CCFD56] font-manrope font-medium text-[14px] items-center"
-              >
-                Lebih Detail
-              </div>
-            </a>
-            <a
-              href="./auth/register.html"
-              class="flex gap-5 w-full justify-end py-2 pl-8 pr-2 rounded-full bg-[#CCFD56] text-[#7C57FD] font-manrope font-semibold text-[14px] items-center"
+      <section id="hero">
+        <div
+          class="bg-[#7C57FD] flex mx-6 rounded-[30px] p-12 items-center shadow justify-evenly"
+        >
+          <div class="flex flex-col gap-14 max-w-[700px]">
+            <!-- Main text -->
+            <div class="flex flex-col gap-5">
+              <p class="text-[#CBBCFE] text-sm">Selamat Datang!</p>
+              <h1 class="text-white text-[70px] font-bold leading-tight">
+                <span class="text-[#CCFD56]">Berkembang</span> &
+                <span class="text-[#CCFD56]">Belajar</span> di Dodemy
+              </h1>
+              <p class="text-[#CBBCFE] text-[22px]">
+                Dodemy menyediakan layanan untuk membantu Anda mengembangkan
+                kemampuan penting untuk masa depan
+              </p>
+            </div>
+            <!-- Button group -->
+            <div class="flex gap-4">
+              <a href=""
+                ><div
+                  class="py-3 px-7 border rounded-full border-[#CCFD56] text-[#CCFD56] font-medium text-[14px] items-center"
+                >
+                  Lebih Detail
+                </div>
+              </a>
+              <a href="href="./auth/register.html""
+                ><div
+                  class="flex gap-5 justify-end py-2 pl-8 pr-2 rounded-full bg-[#CCFD56] text-[#7C57FD] font-semibold text-[14px] items-center"
+                >
+                  Daftar
+                  <div class="rounded-full p-1 bg-[#7C57FD]">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
+                        fill="#CCFD56"
+                      />
+                    </svg>
+                  </div></div
+              ></a>
+            </div>
+            <!-- Info -->
+            <div
+              class="flex w-full max-w-[500px] items-center gap-6 justify-start"
             >
-              <p>Daftar</p>
-              <div class="rounded-full p-1 bg-[#7C57FD]">
+              <div class="flex flex-col gap-3 text-center">
+                <p class="text-6xl text-white">10RB</p>
+                <p class="text-2xl text-[#CBBCFE]">Pengguna <br />Senang</p>
+              </div>
+              <div class="w-[2px] h-20 bg-[#CBBCFE]"></div>
+              <div class="flex flex-col gap-3 text-center">
+                <p class="text-6xl text-white">20+</p>
+                <p class="text-2xl text-[#CBBCFE]">Kursus Tersedia</p>
+              </div>
+              <div class="w-[2px] h-20 bg-[#CBBCFE]"></div>
+              <div class="flex flex-col gap-3 text-center">
+                <p class="text-6xl text-white">10+</p>
+                <p class="text-2xl text-[#CBBCFE]">Perusahaan Terpercaya</p>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="max-w-[450px]">
+            <img src="assets/img/hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Running text -->
+      <div class="logos z-0 overflow-hidden">
+        <div class="inline-flex logos-slide w-max">
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
+        </div>
+        <div class="inline-flex logos-slide w-max">
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
+          <img src="/assets/logos/google.svg" />
+          <img src="/assets/logos/kemendikbud.svg" />
+          <img src="/assets/logos/ruangguru.svg" />
+        </div>
+      </div>
+
+      <!-- Features -->
+      <section id="features" class="pt-8">
+        <div class="flex flex-col text-center gap-4">
+          <h4 class="text-sm">Fitur Spesial</h4>
+          <h1 class="text-[48px] font-semibold">
+            Mau jadi juara kelas?<br />
+            Mulai belajar di Dodemy sekarang! ⭐
+          </h1>
+
+          <!-- Cards container -->
+          <h6 class="self-end mr-10 text-xs">Geser ></h6>
+          <div class="overflow-x-auto scroll-smooth snap-x snap-mandatory">
+            <div class="pl-56 flex gap-24 w-max">
+              <!-- Card -->
+              <div class="flex gap-16 max-h-[340px] snap-center">
+                <img
+                  src="assets/img/feature1.png"
+                  alt=""
+                  class="rounded-[30px] w-full max-w-[340px] p-10 bg-[#F5FFDD]"
+                />
+                <div
+                  class="mt-4 flex flex-col w-full max-w-[350px] justify-between text-start gap-4"
+                >
+                  <h4 class="text-lg font-semibold text-[#7C57FD]">01</h4>
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Evaluasi Kesalahan Anda
+                  </h1>
+                  <p class="text-[#6F6C78] font-medium">
+                    Dengan bank soal Dodemy, kamu akan lebih cepat menguasai
+                    materi. Siap hadapi ujian dengan percaya diri!
+                  </p>
+                  <a
+                    href=""
+                    class="font-semibold py-3 px-7 border border-[#6C6975] rounded-full w-fit text-sm"
+                    >Lebih Detail</a
+                  >
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="flex gap-16 snap-center">
+                <img
+                  src="assets/img/feature2.png"
+                  alt=""
+                  class="rounded-[30px] max-w-[340px] p-16 bg-[#F5FFDD]"
+                />
+                <div
+                  class="mt-4 flex flex-col w-full max-w-[350px] justify-between text-start gap-4"
+                >
+                  <h4 class="text-lg font-semibold text-[#7C57FD]">02</h4>
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Berdiskusi dengan Komunitas
+                  </h1>
+                  <p class="text-[#6F6C78] font-medium">
+                    Butuh bantuan? Tanyakan saja ke komunitas. Saling bertukar
+                    pikiran dengan orang lain seputar materi yang dibahas!
+                  </p>
+                  <a
+                    href=""
+                    class="font-semibold py-3 px-7 border border-[#6C6975] rounded-full w-fit text-sm"
+                    >Lebih Detail</a
+                  >
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="flex gap-16 snap-center">
+                <img
+                  src="assets/img/feature3.png"
+                  alt=""
+                  class="rounded-[30px] max-w-[340px] p-16 bg-[#F5FFDD]"
+                />
+                <div
+                  class="mt-4 flex flex-col w-full max-w-[350px] justify-between text-start gap-4"
+                >
+                  <h4 class="text-lg font-semibold text-[#7C57FD]">03</h4>
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    AI Chatbot
+                  </h1>
+                  <p class="text-[#6F6C78] font-medium">
+                    Punya pertanyaan mendesak? Tenang saja, AI Chatbot akan
+                    membantumu. Dapatkan respon yang cepat dan efisien.
+                  </p>
+                  <a
+                    href=""
+                    class="font-semibold py-3 px-7 border border-[#6C6975] rounded-full w-fit text-sm"
+                    >Lebih Detail</a
+                  >
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="flex gap-16 mr-60 snap-center">
+                <img
+                  src="assets/img/feature4.png"
+                  alt=""
+                  class="rounded-[30px] max-w-[340px] p-16 bg-[#F5FFDD]"
+                />
+                <div
+                  class="mt-4 flex flex-col w-full max-w-[350px] justify-between text-start gap-4"
+                >
+                  <h4 class="text-lg font-semibold text-[#7C57FD]">04</h4>
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Pembelajaran yang Dipersonalisasi
+                  </h1>
+                  <p class="text-[#6F6C78] font-medium">
+                    Tidak perlu susah payah mencari materi yang sesuai. Dodemy
+                    akan membantumu menyiapkan materi yang relevan untukmu.
+                  </p>
+                  <a
+                    href=""
+                    class="font-semibold py-3 px-7 border border-[#6C6975] rounded-full w-fit text-sm"
+                    >Lebih Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Branding -->
+      <div
+        class="bg-[#CCFD56] flex flex-col mx-6 rounded-[30px] mt-20 mb-10 p-12 py-14 gap-20 items-center justify-center shadow"
+      >
+        <img
+          src="/assets/img/branding-accent-bg.png"
+          alt=""
+          class="absolute z-0 max-w-[900px]"
+        />
+        <!-- Logo -->
+        <div class="flex items-center gap-2 z-10">
+          <svg
+            width="46"
+            height="52"
+            viewBox="0 0 14 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 7.63636C14 11.8538 10.866 15.2727 7 15.2727C3.13401 15.2727 0 11.8538 0 7.63636C0 3.41892 3.13401 0 7 0C10.866 0 14 3.41892 14 7.63636ZM2.8 7.63636C2.8 10.1668 4.6804 12.2182 7 12.2182C9.3196 12.2182 11.2 10.1668 11.2 7.63636C11.2 5.1059 9.3196 3.05455 7 3.05455C4.6804 3.05455 2.8 5.1059 2.8 7.63636Z"
+              fill="#7C57FD"
+            />
+            <path
+              d="M14 16.3636C14 17.3665 13.8189 18.3595 13.4672 19.286C13.1154 20.2124 12.5998 21.0543 11.9497 21.7634C11.2997 22.4725 10.5281 23.035 9.67878 23.4187C8.8295 23.8025 7.91925 24 7 24C6.08075 24 5.17049 23.8025 4.32122 23.4187C3.47194 23.035 2.70026 22.4725 2.05025 21.7634C1.40024 21.0543 0.884626 20.2124 0.532843 19.286C0.18106 18.3595 -8.03636e-08 17.3665 0 16.3636H2.8C2.8 16.9653 2.90864 17.5611 3.11971 18.117C3.33078 18.6729 3.64015 19.178 4.03015 19.6035C4.42016 20.0289 4.88316 20.3664 5.39273 20.5967C5.9023 20.8269 6.44845 20.9455 7 20.9455C7.55155 20.9455 8.0977 20.8269 8.60727 20.5967C9.11684 20.3664 9.57984 20.0289 9.96985 19.6035C10.3599 19.178 10.6692 18.6729 10.8803 18.117C11.0914 17.5611 11.2 16.9653 11.2 16.3636H14Z"
+              fill="#7C57FD"
+            />
+          </svg>
+          <h1 class="text-3xl text-[#7C57FD] font-bold">Dodemy</h1>
+        </div>
+
+        <h1
+          class="z-10 text-center font-semibold text-6xl leading-normal text-[#7C57FD]"
+        >
+          Belajar kapan saja, di mana saja. <br />Akses pelajaran menarik dan
+          kuis interaktif dengan mudah.
+        </h1>
+
+        <h6
+          class="z-10 text-center font-semibold leading-normal text-[#9C99BA]"
+        >
+          Dodemy memastikan Anda mendapatkan <br />hasil maksimal dari
+          pembelajaran Anda.
+        </h6>
+      </div>
+
+      <!-- Popular Courses -->
+      <section id="courses" class="pt-8">
+        <div class="flex flex-col text-center gap-4">
+          <h4 class="text-sm">Kelas Populer</h4>
+          <h1 class="text-[48px] font-semibold">
+            Perjalanan belajarmu dimulai dari sini.<br />Teruslah maju!🔥
+          </h1>
+
+          <h6 class="self-end mr-10 text-xs">Geser ></h6>
+
+          <!-- Cards container -->
+          <div
+            class="overflow-x-auto scroll-smooth snap-x snap-mandatory pr-20"
+          >
+            <div class="pl-16 flex gap-10 w-max">
+              <!-- Card -->
+              <div
+                class="flex flex-col gap-4 bg-white p-6 pb-10 border rounded-2xl relative snap-center"
+              >
+                <div class="flex justify-between">
+                  <img
+                    src="/assets/icons/math.svg"
+                    alt=""
+                    class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
+                  />
+                  <!-- Rating and tags -->
+                  <div class="flex space-y-1">
+                    <div class="flex flex-row items-start space-x-2">
+                      <div
+                        class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                      >
+                        <span>⭐</span>
+                        <span>4,5</span>
+                      </div>
+
+                      <div class="flex flex-col gap-3">
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#E5DDFF] text-sm font-semibold text-[#7C57FD] border-[1.5px] border-[#7C57FD]"
+                          >Matematika</span
+                        >
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
+                          >#1 Populer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
+                >
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Aritmatika <br />Dasar
+                  </h1>
+                  <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
+                    Aritmatika mencakup operasi dasar seperti penjumlahan,
+                    pengurangan, perkalian, dan pembagian. Dengan mempelajari
+                    aritmatika, kamu akan belajar bagaimana menghitung secara
+                    cepat dan akurat, yang sangat berguna dalam kehidupan
+                    sehari-hari, mulai dari berbelanja hingga mengatur anggaran
+                  </p>
+
+                  <!-- Profile -->
+                  <a href="">
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="/assets/img/pak-rusdi.jpg"
+                        alt=""
+                        width="35px"
+                        class="rounded-full border"
+                      />
+                      <h4 class="text-sm font-semibold text-[#6F6C78]">
+                        Rusdiyanto S. Pd.
+                      </h4>
+                    </div>
+                  </a>
+
+                  <!-- Price and detail button -->
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-3xl font-bold text-[#7C57FD]">Gratis</h4>
+                    <a href="">
+                      <div
+                        class="flex gap-3 w-full justify-end py-2 pl-4 pr-2 rounded-full bg-[#CCFD56] font-bold text-[14px] items-center"
+                      >
+                        Lihat Kelas
+                        <div class="rounded-full p-1 bg-[#7C57FD]">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
+                              fill="#CCFD56"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="absolute bottom-0 left-0 w-full h-4 bg-[#7C57FD] rounded-b-2xl"
+                ></span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="flex flex-col gap-4 bg-white p-6 pb-10 border rounded-2xl relative snap-center"
+              >
+                <div class="flex justify-between">
+                  <img
+                    src="/assets/icons/kerucut.svg"
+                    alt=""
+                    class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
+                  />
+                  <!-- Rating and tags -->
+                  <div class="flex space-y-1">
+                    <div class="flex flex-row items-start space-x-2">
+                      <div
+                        class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                      >
+                        <span>⭐</span>
+                        <span>4,7</span>
+                      </div>
+
+                      <div class="flex flex-col gap-3">
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#E5DDFF] text-sm font-semibold text-[#7C57FD] border-[1.5px] border-[#7C57FD]"
+                          >Matematika</span
+                        >
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
+                          >#2 Populer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
+                >
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Bangun Ruang Kerucut
+                  </h1>
+                  <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
+                    Mempelajari kerucut tidak hanya tentang mengenal bentuknya,
+                    tetapi juga tentang mengembangkan keterampilan pemecahan
+                    masalah dan berpikir kritis. Pengetahuan tentang kerucut
+                    dapat membantu kita dalam berbagai bidang, seperti teknik,
+                    arsitektur, dan bahkan seni.
+                  </p>
+
+                  <!-- Profile -->
+                  <a href="">
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="/assets/img/joo-min-ten.jpg"
+                        alt=""
+                        width="35px"
+                        class="rounded-full border"
+                      />
+                      <h4 class="text-sm font-semibold text-[#6F6C78]">
+                        Joo Min-ten
+                      </h4>
+                    </div>
+                  </a>
+
+                  <!-- Price and detail button -->
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-3xl font-bold text-[#7C57FD]">Gratis</h4>
+                    <a href="">
+                      <div
+                        class="flex gap-3 w-full justify-end py-2 pl-4 pr-2 rounded-full bg-[#CCFD56] font-bold text-[14px] items-center"
+                      >
+                        Lihat Kelas
+                        <div class="rounded-full p-1 bg-[#7C57FD]">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
+                              fill="#CCFD56"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="absolute bottom-0 left-0 w-full h-4 bg-[#7C57FD] rounded-b-2xl"
+                ></span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="flex flex-col gap-4 bg-white p-6 pb-10 border rounded-2xl relative snap-center"
+              >
+                <div class="flex justify-between">
+                  <img
+                    src="/assets/icons/quantum.svg"
+                    alt=""
+                    class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
+                  />
+                  <!-- Rating and tags -->
+                  <div class="flex space-y-1">
+                    <div class="flex flex-row items-start space-x-2">
+                      <div
+                        class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                      >
+                        <span>⭐</span>
+                        <span>4,7</span>
+                      </div>
+
+                      <div class="flex flex-col gap-3">
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#E5DDFF] text-sm font-semibold text-[#7C57FD] border-[1.5px] border-[#7C57FD]"
+                          >Fisika</span
+                        >
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
+                          >#3 Populer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
+                >
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Seputar Teori Kuantum
+                  </h1>
+                  <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
+                    Teori kuantum tidak hanya menantang cara kita memandang
+                    realitas, tetapi juga memiliki aplikasi luas dalam teknologi
+                    modern, dari komputer kuantum hingga komunikasi yang aman.
+                    Bersiaplah untuk menjelajahi konsep-konsep revolusioner yang
+                    akan membuka wawasan baru tentang bagaimana alam semesta
+                    bekerja pada tingkat paling fundamental!
+                  </p>
+
+                  <!-- Profile -->
+                  <a href="">
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="/assets/img/vin-petrol.jpg"
+                        alt=""
+                        width="35px"
+                        class="rounded-full border"
+                      />
+                      <h4 class="text-sm font-semibold text-[#6F6C78]">
+                        Vin Petrol
+                      </h4>
+                    </div>
+                  </a>
+
+                  <!-- Price and detail button -->
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-3xl font-bold text-[#7C57FD]">Gratis</h4>
+                    <a href="">
+                      <div
+                        class="flex gap-3 w-full justify-end py-2 pl-4 pr-2 rounded-full bg-[#CCFD56] font-bold text-[14px] items-center"
+                      >
+                        Lihat Kelas
+                        <div class="rounded-full p-1 bg-[#7C57FD]">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
+                              fill="#CCFD56"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="absolute bottom-0 left-0 w-full h-4 bg-[#7C57FD] rounded-b-2xl"
+                ></span>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="flex flex-col gap-4 bg-white p-6 pb-10 border rounded-2xl relative snap-center"
+              >
+                <div class="flex justify-between">
+                  <img
+                    src="/assets/icons/palette.svg"
+                    alt=""
+                    class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
+                  />
+                  <!-- Rating and tags -->
+                  <div class="flex space-y-1">
+                    <div class="flex flex-row items-start space-x-2">
+                      <div
+                        class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                      >
+                        <span>⭐</span>
+                        <span>4,2</span>
+                      </div>
+
+                      <div class="flex flex-col gap-3">
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#E5DDFF] text-sm font-semibold text-[#7C57FD] border-[1.5px] border-[#7C57FD]"
+                          >Seni Rupa</span
+                        >
+                        <span
+                          class="py-1.5 px-3 rounded-full bg-[#FFDEDE] text-sm font-semibold text-[#FF5959] border-[1.5px] border-[#FF5959]"
+                          >#4 Populer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col w-full max-w-[320px] justify-between text-start gap-4"
+                >
+                  <h1 class="text-4xl font-semibold leading-[52px]">
+                    Menciptakan Karya Seni Lukis
+                  </h1>
+                  <p class="text-[#6F6C78] text-sm font-medium line-clamp-3">
+                    Siapkan kuasmu dan mari ciptakan karya seni yang
+                    menginspirasi! Temukan inspirasi dan biarkan imajinasimu
+                    mengalir bebas—ayo mulai petualangan kreatifmu sekarang!
+                  </p>
+
+                  <!-- Profile -->
+                  <a href="">
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="/assets/img/helena-chao.jpg"
+                        alt=""
+                        width="35px"
+                        class="rounded-full border"
+                      />
+                      <h4 class="text-sm font-semibold text-[#6F6C78]">
+                        Helena Chao
+                      </h4>
+                    </div>
+                  </a>
+
+                  <!-- Price and detail button -->
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-3xl font-bold text-[#7C57FD]">Gratis</h4>
+                    <a href="">
+                      <div
+                        class="flex gap-3 w-full justify-end py-2 pl-4 pr-2 rounded-full bg-[#CCFD56] font-bold text-[14px] items-center"
+                      >
+                        Lihat Kelas
+                        <div class="rounded-full p-1 bg-[#7C57FD]">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
+                              fill="#CCFD56"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="absolute bottom-0 left-0 w-full h-4 bg-[#7C57FD] rounded-b-2xl"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User reviews -->
+      <section id="reviews" class="pt-4 mt-20">
+        <div
+          class="bg-[#7C57FD] flex flex-col mx-6 rounded-[30px] gap-4 p-12 items-center shadow-lg justify-center text-center"
+        >
+          <h4 class="text-white text-sm">Pesan dan Kesan</h4>
+          <h1 class="text-white text-5xl font-semibold leading-normal">
+            Kisah perjalanan mereka<br />di Dodemy💡
+          </h1>
+
+          <div class="flex gap-8">
+            <!-- 1 -->
+            <div class="flex flex-col gap-8">
+              <!-- Review card -->
+              <div
+                class="flex flex-col w-full max-w-[400px] bg-[#F8F8F8] rounded-2xl p-6 gap-6"
+              >
+                <div class="flex justify-between">
+                  <!-- User -->
+                  <div class="flex items-center text-start gap-3">
+                    <img
+                      src="/assets/img/hendrawan.png"
+                      alt=""
+                      width="40px"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col">
+                      <h5 class="font-semibold">Hendrawan</h5>
+                      <h6 class="text-[10px] font-light">Siswa SMA</h6>
+                    </div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="flex items-center">
+                    <div
+                      class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                    >
+                      <span>⭐</span>
+                      <span>4,5</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Review contents -->
+                <p class="font-semibold text-start">
+                  “Tempat belajarnya bagus banget. Nilai ulangan jadi bagus
+                  setelah belajar di sini. Belajar jadi seru dan materi mudah
+                  dipahami. Apalagi komunitasnya pada ramah semua.”
+                </p>
+              </div>
+              <!-- Review card -->
+              <div
+                class="flex flex-col w-full max-w-[400px] bg-[#F8F8F8] rounded-2xl p-6 gap-6"
+              >
+                <div class="flex justify-between">
+                  <!-- User -->
+                  <div class="flex items-center text-start gap-3">
+                    <img
+                      src="/assets/img/cynthia.jpg"
+                      alt=""
+                      width="40px"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col">
+                      <h5 class="font-semibold">Cynthia</h5>
+                      <h6 class="text-[10px] font-light">Siswi SMP</h6>
+                    </div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="flex items-center">
+                    <div
+                      class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                    >
+                      <span>⭐</span>
+                      <span>4,2</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Review contents -->
+                <p class="font-semibold text-start">
+                  "Belajar di sini tuh super gampang! Platformnya keren banget,
+                  antarmuka friendly dan materi jelas. Aku bisa belajar sesuai
+                  waktu yang ku punya. Bener-bener recommended deh!"
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex items-center">
+              <!-- Review card -->
+              <div
+                class="flex flex-col w-full max-w-[400px] bg-[#F8F8F8] rounded-2xl p-6 gap-6"
+              >
+                <div class="flex justify-between">
+                  <!-- User -->
+                  <div class="flex items-center text-start gap-3">
+                    <img
+                      src="/assets/img/ricardo.jpg"
+                      alt=""
+                      width="40px"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col">
+                      <h5 class="font-semibold">Ricardo</h5>
+                      <h6 class="text-[10px] font-light">Mahasiswa</h6>
+                    </div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="flex items-center">
+                    <div
+                      class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                    >
+                      <span>⭐</span>
+                      <span>4,8</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Review contents -->
+                <p class="font-semibold text-start">
+                  "Belajar di sini itu rasanya kayak ngobrol sama ahli langsung!
+                  Materi kursusnya top, dan pengajarnya jelas banget
+                  menjelasinya. Jadi, kalau kamu pengen belajar dengan cara yang
+                  seru dan bermanfaat, ini tempatnya!"
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex flex-col gap-8">
+              <!-- Review card -->
+              <div
+                class="flex flex-col w-full max-w-[400px] bg-[#F8F8F8] rounded-2xl p-6 gap-6"
+              >
+                <div class="flex justify-between">
+                  <!-- User -->
+                  <div class="flex items-center text-start gap-3">
+                    <img
+                      src="/assets/img/wenome.jpg"
+                      alt=""
+                      width="40px"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col">
+                      <h5 class="font-semibold">Wenome</h5>
+                      <h6 class="text-[10px] font-light">Mahasiswa</h6>
+                    </div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="flex items-center">
+                    <div
+                      class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                    >
+                      <span>⭐</span>
+                      <span>4,5</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Review contents -->
+                <p class="font-semibold text-start">
+                  "Ini sangat cocok buat saya yang sibuk banget!
+                  Kursus-kursusnya dikemas dalam modul-modul pendek yang bisa
+                  dipelajari kapan saja. Nggak perlu ribet, tinggal klik dan
+                  belajar deh!"
+                </p>
+              </div>
+              <!-- Review card -->
+              <div
+                class="flex flex-col w-full max-w-[400px] bg-[#F8F8F8] rounded-2xl p-6 gap-6"
+              >
+                <div class="flex justify-between">
+                  <!-- User -->
+                  <div class="flex items-center text-start gap-3">
+                    <img
+                      src="/assets/img/agnes.jpg"
+                      alt=""
+                      width="40px"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col">
+                      <h5 class="font-semibold">Agnes</h5>
+                      <h6 class="text-[10px] font-light">Siswi SMA</h6>
+                    </div>
+                  </div>
+                  <!-- Rating -->
+                  <div class="flex items-center">
+                    <div
+                      class="flex items-center space-x-2 py-1.5 px-3 rounded-full bg-[#FFF9D5] text-sm font-semibold border-[1.5px] border-[#FFE32F]"
+                    >
+                      <span>⭐</span>
+                      <span>4,6</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Review contents -->
+                <p class="font-semibold text-start">
+                  "Ini asyik banget! Materinya gampang dimengerti dan latihan yang
+                  bikin kita langsung bisa praktek. Dukungan dari
+                  pengajarnya juga cepat dan helpful. Seru banget bisa belajar
+                  di sini!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscription -->
+      <div class="flex flex-col text-center gap-4 mt-20">
+        <h4 class="text-sm">Berlangganan</h4>
+        <h1 class="text-[48px] font-semibold">
+          Temukan segala fitur<br />penunjang belajar Anda 🔍
+        </h1>
+
+        <!-- Plans -->
+        <div class="flex mt-10 mx-6 justify-evenly">
+          <!-- Plan card -->
+          <div
+            class="flex flex-col w-full max-w-[380px] px-8 py-10 bg-white border-[1.5px] shadow rounded-2xl gap-8"
+          >
+            <div class="flex font-bold text-4xl items-center gap-2">
+              <h1 class="w-4 h-4 rounded-full bg-[#7C57FD]"></h1>
+              Semua
+            </div>
+            <div class="flex flex-col gap-8">
+              <!-- Price -->
+              <h2 class="font-bold text-5xl text-[#7C57FD]">Gratis</h2>
+              <!-- Benefits -->
+              <div class="flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Akses kelas gratis</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">AI chatbot (terbatas)</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Personalisasi pembelajaran</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Akses ke komunitas</h4>
+                </div>
+              </div>
+              <button
+                class="w-full py-3 bg-[#7C57FD] text-sm font-medium text-white rounded-full"
+              >
+                Buat akun
+              </button>
+            </div>
+          </div>
+
+          <!-- Plan card -->
+          <div
+            class="flex flex-col w-full max-w-[380px] px-8 py-10 bg-white border-[1.5px] shadow rounded-2xl gap-8"
+          >
+            <div class="flex font-bold text-4xl items-center gap-2">
+              <h1 class="w-4 h-4 rounded-full bg-[#7C57FD]"></h1>
+              Siswa
+            </div>
+            <div class="flex flex-col gap-8">
+              <!-- Price -->
+              <h2 class="font-bold text-5xl text-[#7C57FD]">
+                <span class="text-gray-400 text-xl font-medium">IDR</span>
+                120K<span class="text-xl text-gray-400 font-medium"
+                  >/kelas</span
+                >
+              </h2>
+              <!-- Benefits -->
+              <div class="flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Akses kelas seumur hidup</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">AI chatbot</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Dodemy menjamin pembelajaran</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Kurikulum khusus</h4>
+                </div>
+              </div>
+              <button
+                class="w-full py-3 bg-[#7C57FD] text-sm font-medium text-white rounded-full"
+              >
+                Mulai uji coba
+              </button>
+            </div>
+          </div>
+
+          <!-- Plan card -->
+          <div
+            class="flex flex-col w-full max-w-[380px] px-8 py-10 bg-white border-[1.5px] shadow rounded-2xl gap-8"
+          >
+            <div class="flex font-bold text-4xl items-center gap-2">
+              <h1 class="w-4 h-4 rounded-full bg-[#7C57FD]"></h1>
+              Pro
+            </div>
+            <div class="flex flex-col gap-8">
+              <!-- Price -->
+              <h2 class="font-bold text-5xl text-[#7C57FD]">
+                <span class="text-gray-400 text-xl font-medium">IDR</span>
+                500K<span class="text-gray-400 text-xl font-medium"
+                  >/bulan</span
+                >
+              </h2>
+              <!-- Benefits -->
+              <div class="flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Akses ke semua kelas</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">AI chatbot</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Dodemy menjamin pembelajaran</h4>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <img
+                    src="/assets/icons/u_check.svg"
+                    alt=""
+                    width="40px"
+                    class="bg-[#CCFD56] p-2 rounded-full"
+                  />
+                  <h4 class="font-medium">Kurikulum khusus</h4>
+                </div>
+              </div>
+              <button
+                class="w-full py-3 bg-[#7C57FD] text-sm font-medium text-white rounded-full"
+              >
+                Mulai uji coba 7-hari
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section id="faq" class="pt-10">
+        <div
+          class="bg-[#CCFD56] grid mx-6 rounded-[30px] mt-20 mb-10 p-12 py-16 gap-10 items-center justify-center shadow transition duration-100"
+        >
+          <h1 class="text-4xl font-bold text-[#7C57FD] text-center">FAQ</h1>
+          <div class="grid w-full mt-4 max-w-[800px]">
+            <!-- FAQ Item -->
+            <div
+              class="w-full relative max-w-[800px] border border-gray-200 rounded-lg"
+            >
+              <button
+                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none flex justify-between items-center"
+                onclick="toggleFAQ(this)"
+              >
+                <div>
+                  <span class="text-gray-400 px-2">01</span> Apa itu Dodemy?
+                </div>
+
                 <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
+                  class="w-4 h-4 text-gray-600 transition-transform duration-300 transform"
                   fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M8.90998 20.67C8.71998 20.67 8.52998 20.6 8.37998 20.45C8.08998 20.16 8.08998 19.68 8.37998 19.39L14.9 12.87C15.38 12.39 15.38 11.61 14.9 11.13L8.37998 4.61002C8.08998 4.32002 8.08998 3.84002 8.37998 3.55002C8.66998 3.26002 9.14998 3.26002 9.43998 3.55002L15.96 10.07C16.47 10.58 16.76 11.27 16.76 12C16.76 12.73 16.48 13.42 15.96 13.93L9.43998 20.45C9.28998 20.59 9.09998 20.67 8.90998 20.67Z"
-                    fill="#CCFD56"
-                  />
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
                 </svg>
+              </button>
+              <div
+                class="-mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+              >
+                <p class="pl-14 pr-14 py-4 text-gray-600 bg-white rounded-b-xl">
+                  Dodemy adalah platform pembelajaran online yang menawarkan
+                  pembelajaran akademik nonformal dengan slogan "Dimana Saja,
+                  Kapan Saja". Platform ini dirancang untuk memberikan akses
+                  pendidikan yang fleksibel dan efisien dengan memanfaatkan
+                  teknologi AI untuk meningkatkan pengalaman pengguna ketika
+                  belajar.
+                </p>
               </div>
-              ></a
+            </div>
+
+            <!-- FAQ Item -->
+            <div
+              class="w-full max-w-[800px] mt-8 border border-gray-200 rounded-lg"
             >
-          </div>
-          <!-- Info -->
-          <div
-            class="flex w-full max-w-[500px] items-center gap-6 justify-start"
-          >
-            <div class="flex flex-col gap-3 text-center font-manrope">
-              <p class="text-6xl text-white">10RB</p>
-              <p class="text-2xl text-[#CBBCFE]">Pengguna <br />Senang</p>
+              <button
+                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none flex justify-between items-center"
+                onclick="toggleFAQ(this)"
+              >
+                <div>
+                  <span class="text-gray-400 px-2">02</span> Apa keunikan Dodemy
+                  dibandingkan platform pembelajaran online lainnya?
+                </div>
+
+                <svg
+                  class="w-4 h-4 text-gray-600 transition-transform duration-300 transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="-mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+              >
+                <p class="pl-14 pr-14 py-4 text-gray-600 bg-white rounded-b-xl">
+                  Dodemy memiliki beberapa keunikan yaitu: <br />- Personalisasi
+                  pembelajaran dengan bantuan AI (Personalisasi pembelajaran
+                  agar belajar dengan efektif) <br />- Semi-gamifikasi untuk
+                  meningkatkan motivasi belajar <br />- Aksesibilitas untuk
+                  pengguna dengan disabilitas (seperti text-to-speech dan
+                  speech-to-text) <br />- Kolaborasi dengan pemerintah
+                  (Kemendikbud) dan platform pendidikan lainnya untuk
+                  menyediakan kurikulum berkualitas
+                </p>
+              </div>
             </div>
-            <div class="w-[2px] h-20 bg-[#CBBCFE]"></div>
-            <div class="flex flex-col gap-3 text-center font-manrope">
-              <p class="text-6xl text-white">20+</p>
-              <p class="text-2xl text-[#CBBCFE]">Kursus Tersedia</p>
-            </div>
-            <div class="w-[2px] h-20 bg-[#CBBCFE]"></div>
-            <div class="flex flex-col gap-3 text-center font-manrope">
-              <p class="text-6xl text-white">10+</p>
-              <p class="text-2xl text-[#CBBCFE]">Perusahaan Terpercaya</p>
+
+            <!-- FAQ Item -->
+            <div
+              class="w-full max-w-[800px] mt-8 border border-gray-200 rounded-lg"
+            >
+              <button
+                class="w-full text-left p-4 font-semibold text-gray-800 bg-white rounded-xl cursor-pointer focus:outline-none flex justify-between items-center"
+                onclick="toggleFAQ(this)"
+              >
+                <div>
+                  <span class="text-gray-400 px-2">03</span> Apakah saya bisa
+                  menggunakan Dodemy secara gratis?
+                </div>
+
+                <svg
+                  class="w-4 h-4 text-gray-600 transition-transform duration-300 transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="-mt-4 overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+              >
+                <p class="pl-14 pr-14 py-4 text-gray-600 bg-white rounded-b-xl">
+                  Ya, Anda bisa menggunakan Dodemy secara gratis. Akan tetapi,
+                  Anda hanya mendapat akses ke materi dan fitur yang terbatas.
+                  Anda bisa mencoba trial selama 7 hari untuk mendapatkan
+                  benefit penuh dari Dodemy!
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Image -->
-        <div>
-          <img src="assets/img/hero.png" alt="" class="max-w-[400px]" />
-        </div>
-      </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="mt-28 grid">
+      <div class="flex justify-between px-14 py-10">
+        <div class="flex flex-col gap-4">
+          <a
+            href=""
+            class="flex items-center gap-2 font-jakarta font-bold text-2xl"
+            ><svg
+              width="26"
+              height="40"
+              viewBox="0 0 14 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 7.63636C14 11.8538 10.866 15.2727 7 15.2727C3.13401 15.2727 0 11.8538 0 7.63636C0 3.41892 3.13401 0 7 0C10.866 0 14 3.41892 14 7.63636ZM2.8 7.63636C2.8 10.1668 4.6804 12.2182 7 12.2182C9.3196 12.2182 11.2 10.1668 11.2 7.63636C11.2 5.1059 9.3196 3.05455 7 3.05455C4.6804 3.05455 2.8 5.1059 2.8 7.63636Z"
+                fill="#7C57FD"
+              />
+              <path
+                d="M14 16.3636C14 17.3665 13.8189 18.3595 13.4672 19.286C13.1154 20.2124 12.5998 21.0543 11.9497 21.7634C11.2997 22.4725 10.5281 23.035 9.67878 23.4187C8.8295 23.8025 7.91925 24 7 24C6.08075 24 5.17049 23.8025 4.32122 23.4187C3.47194 23.035 2.70026 22.4725 2.05025 21.7634C1.40024 21.0543 0.884626 20.2124 0.532843 19.286C0.18106 18.3595 -8.03636e-08 17.3665 0 16.3636H2.8C2.8 16.9653 2.90864 17.5611 3.11971 18.117C3.33078 18.6729 3.64015 19.178 4.03015 19.6035C4.42016 20.0289 4.88316 20.3664 5.39273 20.5967C5.9023 20.8269 6.44845 20.9455 7 20.9455C7.55155 20.9455 8.0977 20.8269 8.60727 20.5967C9.11684 20.3664 9.57984 20.0289 9.96985 19.6035C10.3599 19.178 10.6692 18.6729 10.8803 18.117C11.0914 17.5611 11.2 16.9653 11.2 16.3636H14Z"
+                fill="#7C57FD"
+              />
+            </svg>
+            Dodemy</a
+          >
+          <h4 class="text-gray-600 text-lg font-bold">
+            Belajar kapan saja,<br />
+            di mana saja.
+          </h4>
+        </div>
+        <div class="flex gap-16">
+          <!-- Group 1 -->
+          <div class="flex flex-col gap-2">
+            <h2 class="font-bold text-xl mb-2">Produk</h2>
+            <a href="#courses" class="text-gray-600 text-sm font-bold">Kelas</a>
+            <a href="" class="text-gray-600 text-sm font-bold">Mentor</a>
+          </div>
+          <!-- Group 2 -->
+          <div class="flex flex-col gap-2">
+            <h2 class="font-bold text-xl mb-2">Informasi</h2>
+            <a href="" class="text-gray-600 text-sm font-bold">Perusahaan</a>
+            <a href="#reviews" class="text-gray-600 text-sm font-bold"
+              >Testimoni</a
+            >
+            <a href="" class="text-gray-600 text-sm font-bold">Langganan</a>
+            <a href="#faq" class="text-gray-600 text-sm font-bold">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <h6
+        class="text-9xl font-bold text-[#7C57FD] italic text-center mt-16 mb-10"
+      >
+        DODEMY
+      </h6>
+      <div
+        class="flex py-8 px-14 border-t-[1.5px] text-sm text-gray-600 font-semibold justify-between"
+      >
+        @Copyright 2024 COMPEEE TEAM
+
+        <div class="flex gap-8">
+          <a href=""
+            ><img src="/assets/logos/gmail.svg" alt="" width="25px"
+          /></a>
+          <a href=""
+            ><img src="/assets/logos/instagram.svg" alt="" width="25px"
+          /></a>
+          <a href=""
+            ><img src="/assets/logos/whatsapp.svg" alt="" width="25px"
+          /></a>
+        </div>
+        <div
+          class="flex w-full max-w-max gap-8 text-sm text-gray-600 font-semibold"
+        >
+          <a href="">Terms of Use</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
