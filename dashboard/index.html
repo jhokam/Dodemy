@@ -3,12 +3,328 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Dashboard - Dodemy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+    <link rel="icon" href="../assets/logo/dodemy.svg" type="image/svg" />
   </head>
-  <body>
-    <header><nav></nav></header>
-    <main><h1>Dashboard</h1></main>
-    <footer></footer>
+  <body class="bg-gray-100 text-[#0F0A1E] overflow-x-hidden flex">
+    <!-- Left Sidebar -->
+    <aside
+      class="w-fit shadow-lg px-5 h-screen flex flex-col justify-between sticky top-0 left-0 max-sm:hidden p-2"
+    >
+      <div id="sidebar-content" class="hidden sm:block">
+        <div class="space-x-2 flex justify-center items-center p-6">
+          <img
+            src="../assets/logo/dodemy-purple.svg"
+            alt="Dodemy Logo"
+            class="h-12 w-12"
+          />
+          <span class="font-semibold">Dodemy</span>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="mt-8 space-y-2">
+          <a
+            href="#"
+            class="flex items-center px-4 py-2 text-gray-700 bg-gray-200 rounded-xl"
+          >
+            <img src="../assets/icons/home.svg" alt="" class="h-6 w-6 mr-3" />
+            Dashboard
+          </a>
+          <a
+            href="../404.html"
+            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-xl"
+          >
+            <img
+              src="../assets/icons/daily-learn.svg"
+              alt=""
+              class="h-6 w-6 mr-3"
+            />
+            Belajar Harian
+          </a>
+          <a
+            href="../404.html"
+            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-xl"
+          >
+            <img
+              src="../assets/icons/explore-course.svg"
+              alt="Pelajari Kursus logo"
+              class="h-6 w-6 mr-3"
+            />
+            Pelajari Kursus
+          </a>
+        </nav>
+      </div>
+      <div id="sidebar-footer" class="space-y-2">
+        <div
+          class="border-2 rounded-lg flex space-x-3 p-2 items-center lg:hidden"
+        >
+          <img
+            class="size-14 rounded-full"
+            src="../assets/img/rafly-nur-photo-profile.jpg"
+            alt="Photo Profile"
+          />
+          <div>
+            <p class="font-semibold">Rafly Nur</p>
+            <p>20 Point</p>
+          </div>
+        </div>
+        <div>
+          <a
+            href="../404.html"
+            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-xl"
+          >
+            <img
+              class="pr-2"
+              src="../assets/icons/setting.svg"
+              alt="Logo Pengaturan"
+            />
+            Pengaturan
+          </a>
+        </div>
+        <div>
+          <a
+            href="../index.html"
+            class="flex items-center px-4 py-2 text-[#FF5959] hover:bg-gray-200 rounded-xl"
+          >
+            <img
+              class="pr-2"
+              src="../assets/icons/logout.svg"
+              alt="Logo Keluar"
+            />
+            Keluar
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- Main Content -->
+    <main class="flex-1 overflow-x-auto p-6">
+      <div class="flex">
+        <button
+          id="hamburger-menu"
+          class="text-gray-700 focus:outline-none max-sm:visible sm:hidden"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <!-- Searchbar -->
+        <div
+          class="flex items-center px-4 py-2 ml-2 bg-white rounded-full border-2 border-gray-300 focus-within:border-[#7C57FD] w-full"
+        >
+          <img
+            src="../assets/icons/search.svg"
+            alt="Search"
+            class="h-6 w-6 mr-3"
+          />
+          <input
+            autofocus
+            type="text"
+            placeholder="Cari kursus yang ingin Anda pelajari..."
+            class="w-full focus:outline-none"
+          />
+        </div>
+      </div>
+      <!-- Banner -->
+      <div class="bg-[#7C57FD] text-white rounded-3xl p-8 my-6">
+        <h2 class="text-2xl font-bold mb-2">
+          Do commodo culpa eu ut laboris irure velit consectetur voluptate
+          proident enim.
+        </h2>
+        <p class="mb-4">
+          Magna cillum eu mollit esse reprehenderit esse ullamco Lorem laborum
+          ex irure reprehenderit ipsum cupidatat.
+        </p>
+        <button
+          class="bg-black text-white px-4 py-2 rounded-full transition duration-300 ease-in-out hover:bg-gray-800"
+        >
+          Join Now
+        </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="bg-white p-4 rounded-xl shadow">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-semibold">Aritmatika (Matematika)</span>
+            <span class="text-sm text-gray-500">8/15 Materi</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div
+              class="bg-[#7C57FD] h-2.5 rounded-full"
+              style="width: 53%"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Lanjut Belajar</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow overflow-hidden">
+          <img
+            src="/api/placeholder/400/200"
+            alt="Course Thumbnail"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <span class="text-sm text-[#7C57FD] font-semibold">Matematika</span>
+            <h4 class="font-semibold mt-2">
+              Ipsum enim ut irure ad esse quis eiusmod ullamco voluptate amet
+              sunt minim esse.
+            </h4>
+            <div class="flex items-center mt-4">
+              <div class="flex -space-x-2">
+                <img
+                  src="/api/placeholder/32/32"
+                  alt="User"
+                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+                <img
+                  src="/api/placeholder/32/32"
+                  alt="User"
+                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+                <img
+                  src="/api/placeholder/32/32"
+                  alt="User"
+                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+              </div>
+              <span class="ml-2 text-sm text-gray-500">+124 students</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">History Kesalahan</h3>
+    </main>
+    <!-- Right Sidebar -->
+    <aside
+      class="w-fit shadow-lg h-screen sticky top-0 right-0 flex flex-col items-center py-6 px-10 max-lg:hidden"
+    >
+      <h1 class="font-bold text-xl">Profil Kamu</h1>
+      <img
+        class="w-32 h-32 rounded-full mt-3"
+        src="../assets/img/rafly-nur-photo-profile.jpg"
+        alt=""
+      />
+      <div class="flex flex-col items-center">
+        <h3 id="greeting" class="font-semibold text-lg greeting"></h3>
+        <h3 class="font-semibold text-lg">Rafly Nur</h3>
+      </div>
+      <h3 class="font-bold text-xl">Leaderboard</h3>
+      <ul
+        class="*:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+      >
+        <li
+          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+        >
+          <a href="../404.html" class="w-full">
+            <p class="font-bold">1</p>
+            <img
+              class="size-10 rounded-full"
+              src="../assets/img/bayu-adi-photo-profile.jpg"
+              alt="Bayu Adi Baskoro's Photo Profile"
+            />
+            <div>
+              <p class="text-xl">Bayu Adi Baskoro</p>
+              <p>300 Point</p>
+            </div>
+          </a>
+        </li>
+        <li
+          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+        >
+          <a href="../404.html" class="w-full">
+            <p class="font-bold">2</p>
+            <img
+              class="size-10 rounded-full"
+              src="../assets/img/yulia-dela-photo-profile.jpg"
+              alt="Yulia Dela's Photo Profile"
+            />
+            <div>
+              <p class="text-xl">Yulia Dela</p>
+              <p>250 Point</p>
+            </div>
+          </a>
+        </li>
+        <li
+          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+        >
+          <a href="../404.html" class="w-full">
+            <p class="font-bold">3</p>
+            <img
+              class="size-10 rounded-full"
+              src="../assets/img/dzuldean-raafi-photo-profile.jpg"
+              alt="Dzuldean Raafi's Photo Profile"
+            />
+            <div>
+              <p class="text-xl">Dzuldean Raafi</p>
+              <p>200 Point</p>
+            </div>
+          </a>
+        </li>
+        <li
+          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+        >
+          <a href="../404.html" class="w-full">
+            <p>4</p>
+            <img
+              class="size-10 rounded-full"
+              src="../assets/img/xenalya-keiza-photo-profile.jpg"
+              alt="Xenalya Keiza's Photo Profile"
+            />
+            <div>
+              <p>Xenalya Keiza</p>
+              <p>150 Point</p>
+            </div>
+          </a>
+        </li>
+        <li
+          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+        >
+          <a href="../404.html" class="w-full">
+            <p>5</p>
+            <img
+              class="size-10 rounded-full"
+              src="../assets/img/galih-setiaji-photo-profile.jpg"
+              alt="Galih Setiaji's Photo Profile"
+            />
+            <div>
+              <p>Galih Setiaji</p>
+              <p>100 Point</p>
+            </div>
+          </a>
+        </li>
+        <li class="bg-gray-200">
+          <p>6</p>
+          <img
+            class="size-10 rounded-full"
+            src="../assets/img/rafly-nur-photo-profile.jpg"
+            alt="Rafly Nur's Photo Profile"
+          />
+          <div>
+            <p>Rafly Nur</p>
+            <p>20 Point</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <script src="./greeting.js"></script>
   </body>
 </html>
