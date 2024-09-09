@@ -13,20 +13,35 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="../assets/logo/dodemy-purple.svg" type="image/svg" />
+    <link rel="icon" href="./assets/logo/dodemy.svg" type="image/svg" />
   </head>
   <body class="bg-[#F8F8F8]">
     <header class="sticky top-0 w-full align-middle bg-[#F8F8F8] z-50">
       <nav class="flex flex-row w-full justify-between py-4 px-12 items-center">
+        <button
+          class="text-gray-700 focus:outline-none max-sm:visible md:hidden"
+        >
+          <img
+            src="./assets/icons/hamburger-menu.svg"
+            alt="Icon of Hamburger Menu"
+          />
+        </button>
         <!-- Logo -->
         <a
           href=""
           class="flex items-center gap-2 font-jakarta font-bold text-xl"
-          ><img src="assets/logo/dodemy-purple.svg" class="w-4" /> Dodemy</a
+          ><img
+            src="assets/logo/dodemy-purple.svg"
+            class="w-4"
+            alt="Logo of Dodemy"
+          />
+          Dodemy</a
         >
 
         <!-- Nav Links -->
-        <ul class="nav-links flex flex-row gap-14 font-semibold text-sm">
+        <ul
+          class="nav-links flex flex-row gap-14 font-semibold text-sm max-md:hidden"
+        >
           <li><a href="#hero" class="nav-link active">Beranda</a></li>
           <li><a href="#features" class="nav-link">Fitur</a></li>
           <li><a href="#courses" class="nav-link">Kelas</a></li>
@@ -54,11 +69,15 @@
             <!-- Main text -->
             <div class="flex flex-col gap-5">
               <p class="text-[#CBBCFE] text-sm">Selamat Datang!</p>
-              <h1 class="text-white text-[70px] font-bold leading-tight">
+              <h1
+                class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight"
+              >
                 <span class="text-[#CCFD56]">Berkembang</span> &
                 <span class="text-[#CCFD56]">Belajar</span> di Dodemy
               </h1>
-              <p class="text-[#CBBCFE] text-[22px]">
+              <p
+                class="text-[#CBBCFE] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"
+              >
                 Dodemy menyediakan layanan untuk membantu Anda mengembangkan
                 kemampuan penting untuk masa depan
               </p>
@@ -78,7 +97,10 @@
                 >
                   Daftar
                   <div class="rounded-full p-1 bg-[#7C57FD]">
-                    <img src="assets/icons/arrow-right.svg" alt="" />
+                    <img
+                      src="assets/icons/arrow-right.svg"
+                      alt="Icon of Arrow Right"
+                    />
                   </div></div
               ></a>
             </div>
@@ -87,24 +109,48 @@
               class="flex w-full max-w-[500px] items-center gap-6 justify-start"
             >
               <div class="flex flex-col gap-3 text-center">
-                <p class="text-6xl text-white">10RB</p>
-                <p class="text-2xl text-[#CBBCFE]">Pengguna <br />Senang</p>
+                <p
+                  class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white"
+                >
+                  10RB
+                </p>
+                <p
+                  class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-[#CBBCFE]"
+                >
+                  Pengguna <br />Senang
+                </p>
               </div>
               <div class="w-[2px] h-20 bg-[#CBBCFE]"></div>
               <div class="flex flex-col gap-3 text-center">
-                <p class="text-6xl text-white">20+</p>
-                <p class="text-2xl text-[#CBBCFE]">Kursus Tersedia</p>
+                <p
+                  class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white"
+                >
+                  20+
+                </p>
+                <p
+                  class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-[#CBBCFE]"
+                >
+                  Kursus Tersedia
+                </p>
               </div>
               <div class="w-[2px] h-20 bg-[#CBBCFE]"></div>
               <div class="flex flex-col gap-3 text-center">
-                <p class="text-6xl text-white">10+</p>
-                <p class="text-2xl text-[#CBBCFE]">Perusahaan Terpercaya</p>
+                <p
+                  class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white"
+                >
+                  10+
+                </p>
+                <p
+                  class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-[#CBBCFE]"
+                >
+                  Perusahaan Terpercaya
+                </p>
               </div>
             </div>
           </div>
           <!-- Image -->
           <div class="max-w-[450px]">
-            <img src="assets/img/hero.png" alt="" />
+            <img src="assets/img/hero.png" alt="Image Women Teacher" />
           </div>
         </div>
       </section>
@@ -112,26 +158,26 @@
       <!-- Running text -->
       <div class="logos z-0 overflow-hidden">
         <div class="inline-flex logos-slide w-max">
-          <img src="/assets/logos/google.svg" />
-          <img src="/assets/logos/kemendikbud.svg" />
-          <img src="/assets/logos/ruangguru.svg" />
-          <img src="/assets/logos/google.svg" />
-          <img src="/assets/logos/kemendikbud.svg" />
-          <img src="/assets/logos/ruangguru.svg" />
-          <img src="/assets/logos/google.svg" />
-          <img src="/assets/logos/kemendikbud.svg" />
-          <img src="/assets/logos/ruangguru.svg" />
+          <img alt="Logo Google" src="/assets/logos/google.svg" />
+          <img alt="Logo Kemendikbud" src="/assets/logos/kemendikbud.svg" />
+          <img alt="Logo Ruang Guru" src="/assets/logos/ruangguru.svg" />
+          <img alt="Logo Google" src="/assets/logos/google.svg" />
+          <img alt="Logo Kemendikbud" src="/assets/logos/kemendikbud.svg" />
+          <img alt="Logo Ruang Guru" src="/assets/logos/ruangguru.svg" />
+          <img alt="Logo Google" src="/assets/logos/google.svg" />
+          <img alt="Logo Kemendikbud" src="/assets/logos/kemendikbud.svg" />
+          <img alt="Logo Ruang Guru" src="/assets/logos/ruangguru.svg" />
         </div>
         <div class="inline-flex logos-slide w-max">
-          <img src="/assets/logos/google.svg" />
-          <img src="/assets/logos/kemendikbud.svg" />
-          <img src="/assets/logos/ruangguru.svg" />
-          <img src="/assets/logos/google.svg" />
-          <img src="/assets/logos/kemendikbud.svg" />
-          <img src="/assets/logos/ruangguru.svg" />
-          <img src="/assets/logos/google.svg" />
-          <img src="/assets/logos/kemendikbud.svg" />
-          <img src="/assets/logos/ruangguru.svg" />
+          <img alt="Logo Google" src="/assets/logos/google.svg" />
+          <img alt="Logo Kemendikbud" src="/assets/logos/kemendikbud.svg" />
+          <img alt="Logo Ruang Guru" src="/assets/logos/ruangguru.svg" />
+          <img alt="Logo Google" src="/assets/logos/google.svg" />
+          <img alt="Logo Kemendikbud" src="/assets/logos/kemendikbud.svg" />
+          <img alt="Logo Ruang Guru" src="/assets/logos/ruangguru.svg" />
+          <img alt="Logo Google" src="/assets/logos/google.svg" />
+          <img alt="Logo Kemendikbud" src="/assets/logos/kemendikbud.svg" />
+          <img alt="Logo Ruang Guru" src="/assets/logos/ruangguru.svg" />
         </div>
       </div>
 
@@ -139,7 +185,9 @@
       <section id="features" class="pt-8">
         <div class="flex flex-col text-center gap-4">
           <h4 class="text-sm">Fitur Spesial</h4>
-          <h1 class="text-[48px] font-semibold">
+          <h1
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold"
+          >
             Mau jadi juara kelas?<br />
             Mulai belajar di Dodemy sekarang! ⭐
           </h1>
@@ -152,7 +200,7 @@
               <div class="flex gap-16 max-h-[340px] snap-center">
                 <img
                   src="assets/img/feature1.png"
-                  alt=""
+                  alt="Image of feature Evaluasi Kesalahan Anda"
                   class="rounded-[30px] w-full max-w-[340px] p-10 bg-[#F5FFDD]"
                 />
                 <div
@@ -177,7 +225,7 @@
               <div class="flex gap-16 snap-center">
                 <img
                   src="assets/img/feature2.png"
-                  alt=""
+                  alt="Image of feature Berdiskusi dengan Komunitas"
                   class="rounded-[30px] max-w-[340px] p-16 bg-[#F5FFDD]"
                 />
                 <div
@@ -202,7 +250,7 @@
               <div class="flex gap-16 snap-center">
                 <img
                   src="assets/img/feature3.png"
-                  alt=""
+                  alt="Image of feature AI Chatbot"
                   class="rounded-[30px] max-w-[340px] p-16 bg-[#F5FFDD]"
                 />
                 <div
@@ -227,7 +275,7 @@
               <div class="flex gap-16 mr-60 snap-center">
                 <img
                   src="assets/img/feature4.png"
-                  alt=""
+                  alt="Image of feature Pembelajaran yang Dipersonalisasi"
                   class="rounded-[30px] max-w-[340px] p-16 bg-[#F5FFDD]"
                 />
                 <div
@@ -259,24 +307,28 @@
       >
         <img
           src="/assets/img/branding-accent-bg.png"
-          alt=""
-          class="absolute z-0 max-w-[900px]"
+          alt="Accent Background"
+          class="absolute z-0 w-fit"
         />
         <!-- Logo -->
         <div class="flex items-center gap-4 z-10">
-          <img src="assets/logo/dodemy-purple.svg" alt="" class="w-8" />
-          <h1 class="text-3xl text-[#7C57FD] font-bold">Dodemy</h1>
+          <img
+            src="assets/logo/dodemy-purple.svg"
+            alt="Logo of Dodemy"
+            class="w-8"
+          />
+          <h1 class="text-xl md:text-3xl text-[#7C57FD] font-bold">Dodemy</h1>
         </div>
 
         <h1
-          class="z-10 text-center font-semibold text-6xl leading-normal text-[#7C57FD]"
+          class="z-10 text-center font-semibold text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl leading-normal text-[#7C57FD]"
         >
           Belajar kapan saja, di mana saja. <br />Akses pelajaran menarik dan
           kuis interaktif dengan mudah.
         </h1>
 
         <h6
-          class="z-10 text-center font-semibold leading-normal text-[#9C99BA]"
+          class="z-10 text-center font-semibold text-[#9C99BA] sm:text-lg md:text-xl"
         >
           Dodemy memastikan Anda mendapatkan <br />hasil maksimal dari
           pembelajaran Anda.
@@ -287,7 +339,9 @@
       <section id="courses" class="pt-8">
         <div class="flex flex-col text-center gap-4">
           <h4 class="text-sm">Kelas Populer</h4>
-          <h1 class="text-[48px] font-semibold">
+          <h1
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold"
+          >
             Perjalanan belajarmu dimulai dari sini.<br />Teruslah maju!🔥
           </h1>
 
@@ -305,7 +359,7 @@
                 <div class="flex justify-between">
                   <img
                     src="/assets/icons/math.svg"
-                    alt=""
+                    alt="Icon of Math"
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
                   <!-- Rating and tags -->
@@ -351,7 +405,7 @@
                     <div class="flex items-center gap-2">
                       <img
                         src="/assets/img/pak-rusdi.jpg"
-                        alt=""
+                        alt="Image of Pak Rusdi"
                         width="35px"
                         class="rounded-full border"
                       />
@@ -370,7 +424,10 @@
                       >
                         Lihat Kelas
                         <div class="rounded-full p-1 bg-[#7C57FD]">
-                          <img src="assets/icons/arrow-right.svg" alt="" />
+                          <img
+                            src="assets/icons/arrow-right.svg"
+                            alt="Icon of an Arrow Right"
+                          />
                         </div>
                       </div>
                     </a>
@@ -388,7 +445,7 @@
                 <div class="flex justify-between">
                   <img
                     src="/assets/icons/kerucut.svg"
-                    alt=""
+                    alt="Icon of Kerucut"
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
                   <!-- Rating and tags -->
@@ -434,7 +491,7 @@
                     <div class="flex items-center gap-2">
                       <img
                         src="/assets/img/joo-min-ten.jpg"
-                        alt=""
+                        alt="Image of Joo Min-ten"
                         width="35px"
                         class="rounded-full border"
                       />
@@ -453,7 +510,10 @@
                       >
                         Lihat Kelas
                         <div class="rounded-full p-1 bg-[#7C57FD]">
-                          <img src="assets/icons/arrow-right.svg" alt="" />
+                          <img
+                            src="assets/icons/arrow-right.svg"
+                            alt="Icon of Arrow Right"
+                          />
                         </div>
                       </div>
                     </a>
@@ -471,7 +531,7 @@
                 <div class="flex justify-between">
                   <img
                     src="/assets/icons/quantum.svg"
-                    alt=""
+                    alt="Icon of Quantum"
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
                   <!-- Rating and tags -->
@@ -518,7 +578,7 @@
                     <div class="flex items-center gap-2">
                       <img
                         src="/assets/img/vin-petrol.jpg"
-                        alt=""
+                        alt="Image of Vin Petrol"
                         width="35px"
                         class="rounded-full border"
                       />
@@ -537,7 +597,10 @@
                       >
                         Lihat Kelas
                         <div class="rounded-full p-1 bg-[#7C57FD]">
-                          <img src="assets/icons/arrow-right.svg" alt="" />
+                          <img
+                            src="assets/icons/arrow-right.svg"
+                            alt="Icon of Arrow Right"
+                          />
                         </div>
                       </div>
                     </a>
@@ -555,7 +618,7 @@
                 <div class="flex justify-between">
                   <img
                     src="/assets/icons/palette.svg"
-                    alt=""
+                    alt="Logo of Palette"
                     class="p-8 bg-[#7C57FD] max-w-24 rounded-xl"
                   />
                   <!-- Rating and tags -->
@@ -599,7 +662,7 @@
                     <div class="flex items-center gap-2">
                       <img
                         src="/assets/img/helena-chao.jpg"
-                        alt=""
+                        alt="Image of Helena Chao"
                         width="35px"
                         class="rounded-full border"
                       />
@@ -618,7 +681,10 @@
                       >
                         Lihat Kelas
                         <div class="rounded-full p-1 bg-[#7C57FD]">
-                          <img src="assets/icons/arrow-right.svg" alt="" />
+                          <img
+                            src="assets/icons/arrow-right.svg"
+                            alt="Icon of Arrow Right"
+                          />
                         </div>
                       </div>
                     </a>
@@ -639,7 +705,9 @@
           class="bg-[#7C57FD] flex flex-col mx-6 rounded-[30px] gap-4 p-12 items-center shadow-lg justify-center text-center"
         >
           <h4 class="text-white text-sm">Pesan dan Kesan</h4>
-          <h1 class="text-white text-5xl font-semibold leading-normal">
+          <h1
+            class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold leading-normal"
+          >
             Kisah perjalanan mereka<br />di Dodemy💡
           </h1>
 
@@ -655,7 +723,7 @@
                   <div class="flex items-center text-start gap-3">
                     <img
                       src="/assets/img/hendrawan.png"
-                      alt=""
+                      alt="Image of Hendrawan"
                       width="40px"
                       class="rounded-full"
                     />
@@ -690,7 +758,7 @@
                   <div class="flex items-center text-start gap-3">
                     <img
                       src="/assets/img/cynthia.jpg"
-                      alt=""
+                      alt="Image of Cynthia"
                       width="40px"
                       class="rounded-full"
                     />
@@ -728,7 +796,7 @@
                   <div class="flex items-center text-start gap-3">
                     <img
                       src="/assets/img/ricardo.jpg"
-                      alt=""
+                      alt="Photo Profile of Ricardo Mahasiswa"
                       width="40px"
                       class="rounded-full"
                     />
@@ -767,7 +835,7 @@
                   <div class="flex items-center text-start gap-3">
                     <img
                       src="/assets/img/wenome.jpg"
-                      alt=""
+                      alt="Photo Profile of Wenome Mahasiswa"
                       width="40px"
                       class="rounded-full"
                     />
@@ -803,7 +871,7 @@
                   <div class="flex items-center text-start gap-3">
                     <img
                       src="/assets/img/agnes.jpg"
-                      alt=""
+                      alt="Photo Profile of Agnes Siswi SMA"
                       width="40px"
                       class="rounded-full"
                     />
@@ -838,7 +906,9 @@
       <!-- Subscription -->
       <div class="flex flex-col text-center gap-4 mt-20">
         <h4 class="text-sm">Berlangganan</h4>
-        <h1 class="text-[48px] font-semibold">
+        <h1
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold"
+        >
           Temukan segala fitur<br />penunjang belajar Anda 🔍
         </h1>
 
@@ -860,7 +930,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -869,7 +939,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -878,7 +948,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -887,7 +957,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -924,16 +994,16 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
-                  <h4 class="font-medium">Akses kelas seumur hidup</h4>
+                  <h4 class="font-medium">Akses ke semua kelas</h4>
                 </div>
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -942,7 +1012,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -951,7 +1021,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -988,7 +1058,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -997,7 +1067,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -1006,7 +1076,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -1015,7 +1085,7 @@
                 <div class="flex gap-4 items-center">
                   <img
                     src="/assets/icons/u_check.svg"
-                    alt=""
+                    alt="Icon of a checkmark"
                     width="40px"
                     class="bg-[#CCFD56] p-2 rounded-full"
                   />
@@ -1038,7 +1108,11 @@
         <div
           class="bg-[#CCFD56] grid mx-6 rounded-[30px] mt-20 mb-10 p-12 py-16 gap-10 items-center justify-center shadow transition duration-100"
         >
-          <h1 class="text-4xl font-bold text-[#7C57FD] text-center">FAQ</h1>
+          <h1
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-[#7C57FD] text-center"
+          >
+            FAQ
+          </h1>
           <div class="grid w-full mt-4 max-w-[800px]">
             <!-- FAQ Item -->
             <div
@@ -1051,10 +1125,9 @@
                 <div>
                   <span class="text-gray-400 px-2">01</span> Apa itu Dodemy?
                 </div>
-
                 <img
                   src="assets/icons/arrow-faq.svg"
-                  alt=""
+                  alt="Icon of an arrow"
                   class="w-4 transition duration-200"
                 />
               </button>
@@ -1084,10 +1157,9 @@
                   <span class="text-gray-400 px-2">02</span> Apa keunikan Dodemy
                   dibandingkan platform pembelajaran online lainnya?
                 </div>
-
                 <img
                   src="assets/icons/arrow-faq.svg"
-                  alt=""
+                  alt="Icon of an arrow"
                   class="w-4 transition duration-200"
                 />
               </button>
@@ -1119,10 +1191,9 @@
                   <span class="text-gray-400 px-2">03</span> Apakah saya bisa
                   menggunakan Dodemy secara gratis?
                 </div>
-
                 <img
                   src="assets/icons/arrow-faq.svg"
-                  alt=""
+                  alt="Icon of an arrow"
                   class="w-4 transition duration-200"
                 />
               </button>
@@ -1148,10 +1219,16 @@
           <a
             href=""
             class="flex items-center gap-2 font-jakarta font-bold text-2xl"
-            ><img src="assets/logo/dodemy-purple.svg" alt="" class="w-6" />
+            ><img
+              src="assets/logo/dodemy-purple.svg"
+              alt="Logo of Dodemy"
+              class="w-6"
+            />
             Dodemy</a
           >
-          <h4 class="text-gray-600 text-lg font-bold">
+          <h4
+            class="text-gray-600 text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-bold"
+          >
             Belajar kapan saja,<br />
             di mana saja.
           </h4>
@@ -1159,7 +1236,11 @@
         <div class="flex gap-16">
           <!-- Group 1 -->
           <div class="flex flex-col gap-2">
-            <h2 class="font-bold text-xl mb-2">Produk</h2>
+            <h2
+              class="font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-2"
+            >
+              Produk
+            </h2>
             <a href="#courses" class="text-gray-600 text-sm font-bold">Kelas</a>
             <a href="./404.html" class="text-gray-600 text-sm font-bold"
               >Mentor</a
@@ -1167,7 +1248,11 @@
           </div>
           <!-- Group 2 -->
           <div class="flex flex-col gap-2">
-            <h2 class="font-bold text-xl mb-2">Informasi</h2>
+            <h2
+              class="font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-2"
+            >
+              Informasi
+            </h2>
             <a href="./404.html" class="text-gray-600 text-sm font-bold"
               >Perusahaan</a
             >
@@ -1178,32 +1263,59 @@
           </div>
         </div>
       </div>
-      <h6
-        class="text-9xl font-bold text-[#7C57FD] italic text-center mt-16 mb-10"
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold text-[#7C57FD] italic text-center mt-16 mb-10"
       >
         DODEMY
-      </h6>
+      </h1>
       <div
-        class="flex py-8 px-14 border-t-[1.5px] text-sm text-gray-600 font-semibold justify-between"
+        class="flex py-8 px-14 border-t-[1.5px] text-xs xl:text-sm 2xl:text-base text-gray-600 font-semibold justify-between"
       >
         @Copyright 2024 COMPEEE TEAM
-
         <div class="flex gap-8">
-          <a href="https://gmail.com"
-            ><img src="/assets/logos/gmail.svg" alt="" width="25px"
+          <a
+            href="mailto:jhokamjhokam@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="/assets/logos/gmail.svg"
+              alt="Logo of Gmail"
+              width="25px"
           /></a>
-          <a href="https://instagram.com"
-            ><img src="/assets/logos/instagram.svg" alt="" width="25px"
+          <a
+            href="https://instagram.com/abazmi_qwe"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="/assets/logos/instagram.svg"
+              alt="Logo of Instagram"
+              width="25px"
           /></a>
-          <a href="https://whatsapp.com"
-            ><img src="/assets/logos/whatsapp.svg" alt="" width="25px"
+          <a
+            href="https://wa.me/6289670288120?text=Halo%20min%20saya%20ingin%20bertanya%20tentang%20Dodemy"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="/assets/logos/whatsapp.svg"
+              alt="Logo of Whatsapp"
+              width="25px"
+          /></a>
+          <a href="tel:+6289670288120" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="/assets/icons/call-calling.svg"
+              alt="Icon of Phone Call"
+              width="25px"
           /></a>
         </div>
         <div
           class="flex w-full max-w-max gap-8 text-sm text-gray-600 font-semibold"
         >
-          <a href="./404.html">Terms of Use</a>
-          <a href="./404.html">Privacy Policy</a>
+          <a class="text-xs xl:text-sm 2xl:text-base" href="./404.html"
+            >Terms of Use</a
+          >
+          <a class="text-xs xl:text-sm 2xl:text-base" href="./404.html"
+            >Privacy Policy</a
+          >
         </div>
       </div>
     </footer>
