@@ -22,27 +22,26 @@
       class="w-fit shadow-lg px-5 h-screen flex flex-col justify-between sticky top-0 left-0 max-sm:hidden p-2"
     >
       <div id="sidebar-content" class="hidden sm:block">
-        <div class="space-x-2 flex justify-center items-center p-6">
+        <a
+          href="./index.html"
+          class="space-x-2 flex justify-center items-center p-6"
+        >
           <img
             src="../assets/logo/dodemy-purple.svg"
             alt="Dodemy Logo"
             class="h-12 w-12"
           />
           <span class="font-semibold">Dodemy</span>
-        </div>
+        </a>
         <!-- Navigation Menu -->
-        <nav class="mt-8 space-y-2">
-          <a
-            href="#"
-            class="flex items-center px-4 py-2 text-gray-700 bg-gray-200 rounded-xl"
-          >
+        <nav
+          class="mt-8 space-y-2 *:duration-200 *:flex *:items-center *:px-4 *:py-2 *:rounded-xl"
+        >
+          <a href="#" class="text-[#7C57FD] bg-gray-200 rounded-xl">
             <img src="../assets/icons/home.svg" alt="" class="h-6 w-6 mr-3" />
             Dashboard
           </a>
-          <a
-            href="../404.html"
-            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-xl"
-          >
+          <a href="../404.html" class="text-gray-700 hover:bg-gray-200">
             <img
               src="../assets/icons/daily-learn.svg"
               alt=""
@@ -52,7 +51,7 @@
           </a>
           <a
             href="../404.html"
-            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-xl"
+            class="text-gray-700 hover:bg-gray-200 rounded-xl"
           >
             <img
               src="../assets/icons/explore-course.svg"
@@ -64,7 +63,8 @@
         </nav>
       </div>
       <div id="sidebar-footer" class="space-y-2">
-        <div
+        <a
+          href="../404.html"
           class="border-2 rounded-lg flex space-x-3 p-2 items-center lg:hidden"
         >
           <img
@@ -76,33 +76,29 @@
             <p class="font-semibold">Rafly Nur</p>
             <p>20 Point</p>
           </div>
-        </div>
-        <div>
-          <a
-            href="../404.html"
-            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-xl"
-          >
-            <img
-              class="pr-2"
-              src="../assets/icons/setting.svg"
-              alt="Logo Pengaturan"
-            />
-            Pengaturan
-          </a>
-        </div>
-        <div>
-          <a
-            href="../index.html"
-            class="flex items-center px-4 py-2 text-[#FF5959] hover:bg-gray-200 rounded-xl"
-          >
-            <img
-              class="pr-2"
-              src="../assets/icons/logout.svg"
-              alt="Logo Keluar"
-            />
-            Keluar
-          </a>
-        </div>
+        </a>
+        <a
+          href="../404.html"
+          class="flex items-center px-4 py-2 text-gray-700 duration-200 hover:bg-gray-200 rounded-xl"
+        >
+          <img
+            class="pr-2"
+            src="../assets/icons/setting.svg"
+            alt="Logo Pengaturan"
+          />
+          Pengaturan
+        </a>
+        <a
+          href="../index.html"
+          class="flex items-center px-4 py-2 text-[#FF5959] duration-200 hover:bg-gray-200 rounded-xl"
+        >
+          <img
+            class="pr-2"
+            src="../assets/icons/logout.svg"
+            alt="Logo Keluar"
+          />
+          Keluar
+        </a>
       </div>
     </aside>
     <!-- Main Content -->
@@ -135,24 +131,37 @@
       </div>
       <!-- Banner -->
       <div class="bg-[#7C57FD] text-white rounded-3xl p-8 my-6">
-        <h2 class="text-2xl font-bold mb-2">
-          Do commodo culpa eu ut laboris irure velit consectetur voluptate
-          proident enim.
+        <h2 class="text-2xl 2xl:text-3xl font-bold mb-2">
+          Pertajam skill mu dengan Dodemy+
         </h2>
-        <p class="mb-4">
-          Magna cillum eu mollit esse reprehenderit esse ullamco Lorem laborum
-          ex irure reprehenderit ipsum cupidatat.
-        </p>
-        <button
+        <p class="mb-4"></p>
+        <a
+          href="../404.html"
           class="bg-black text-white px-4 py-2 rounded-full transition duration-300 ease-in-out hover:bg-gray-800"
         >
-          Join Now
-        </button>
+          Gabung Sekarang
+        </a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-        <div class="bg-white p-4 rounded-xl shadow">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 mb-6 *:bg-white *:p-4 *:rounded-xl *:shadow"
+      >
+        <!-- Card Item -->
+        <a href="../404.html">
           <div class="flex justify-between items-center mb-2">
-            <span class="font-semibold">Aritmatika (Matematika)</span>
+            <span class="font-semibold">Aritmatika Dasar</span>
+            <span class="text-sm text-gray-500">8/10 Materi</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div
+              class="bg-[#7C57FD] h-2.5 rounded-full"
+              style="width: 80%"
+            ></div>
+          </div>
+        </a>
+        <!-- Card Item -->
+        <a href="../404.html">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-semibold">Bangun Ruang Kerucut</span>
             <span class="text-sm text-gray-500">8/15 Materi</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -161,50 +170,171 @@
               style="width: 53%"
             ></div>
           </div>
-        </div>
+        </a>
+        <!-- Card Item -->
+        <a href="../404.html">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-semibold">Seputar Teori Kuantum</span>
+            <span class="text-sm text-gray-500">6/12 Materi</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div
+              class="bg-[#7C57FD] h-2.5 rounded-full"
+              style="width: 50%"
+            ></div>
+          </div>
+        </a>
+        <!-- Card Item -->
+        <a href="../404.html">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-semibold">Menciptakan Karya Seni Lukis</span>
+            <span class="text-sm text-gray-500">15/20 Materi</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div
+              class="bg-[#7C57FD] h-2.5 rounded-full"
+              style="width: 75%"
+            ></div>
+          </div>
+        </a>
       </div>
       <h3 class="text-xl font-semibold mb-4">Lanjut Belajar</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <div class="bg-white rounded-xl shadow overflow-hidden">
+        <a
+          href="../404.html"
+          class="bg-white rounded-xl shadow overflow-hidden"
+        >
           <img
-            src="/api/placeholder/400/200"
+            src="../assets/img/aritmatika-banner.png"
             alt="Course Thumbnail"
             class="w-full h-40 object-cover"
           />
           <div class="p-4">
             <span class="text-sm text-[#7C57FD] font-semibold">Matematika</span>
-            <h4 class="font-semibold mt-2">
-              Ipsum enim ut irure ad esse quis eiusmod ullamco voluptate amet
-              sunt minim esse.
-            </h4>
+            <h4 class="font-semibold mt-2">Aritmatika Dasar</h4>
             <div class="flex items-center mt-4">
-              <div class="flex -space-x-2">
+              <div
+                class="flex -space-x-2 *:inline-block *:h-8 *:w-8 *:rounded-full *:ring-2 *:ring-white"
+              >
                 <img
-                  src="/api/placeholder/32/32"
+                  src="../assets/img/bayu-adi-photo-profile.jpg"
                   alt="User"
-                  class="w-8 h-8 rounded-full border-2 border-white"
                 />
                 <img
-                  src="/api/placeholder/32/32"
+                  src="../assets/img/yulia-dela-photo-profile.jpg"
                   alt="User"
-                  class="w-8 h-8 rounded-full border-2 border-white"
                 />
                 <img
-                  src="/api/placeholder/32/32"
+                  src="../assets/img/dzuldean-raafi-photo-profile.jpg"
                   alt="User"
-                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+              </div>
+              <span class="ml-2 text-sm text-gray-500">+124 students</span>
+            </div>
+          </div> </a
+        ><a
+          href="../404.html"
+          class="bg-white rounded-xl shadow overflow-hidden"
+        >
+          <img
+            src="../assets/img/aritmatika-banner.png"
+            alt="Course Thumbnail"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <span class="text-sm text-[#7C57FD] font-semibold">Matematika</span>
+            <h4 class="font-semibold mt-2">Aritmatika Dasar</h4>
+            <div class="flex items-center mt-4">
+              <div
+                class="flex -space-x-2 *:inline-block *:h-8 *:w-8 *:rounded-full *:ring-2 *:ring-white"
+              >
+                <img
+                  src="../assets/img/bayu-adi-photo-profile.jpg"
+                  alt="User"
+                />
+                <img
+                  src="../assets/img/yulia-dela-photo-profile.jpg"
+                  alt="User"
+                />
+                <img
+                  src="../assets/img/dzuldean-raafi-photo-profile.jpg"
+                  alt="User"
+                />
+              </div>
+              <span class="ml-2 text-sm text-gray-500">+124 students</span>
+            </div>
+          </div> </a
+        ><a
+          href="../404.html"
+          class="bg-white rounded-xl shadow overflow-hidden"
+        >
+          <img
+            src="../assets/img/aritmatika-banner.png"
+            alt="Course Thumbnail"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <span class="text-sm text-[#7C57FD] font-semibold">Matematika</span>
+            <h4 class="font-semibold mt-2">Aritmatika Dasar</h4>
+            <div class="flex items-center mt-4">
+              <div
+                class="flex -space-x-2 *:inline-block *:h-8 *:w-8 *:rounded-full *:ring-2 *:ring-white"
+              >
+                <img
+                  src="../assets/img/bayu-adi-photo-profile.jpg"
+                  alt="User"
+                />
+                <img
+                  src="../assets/img/yulia-dela-photo-profile.jpg"
+                  alt="User"
+                />
+                <img
+                  src="../assets/img/dzuldean-raafi-photo-profile.jpg"
+                  alt="User"
+                />
+              </div>
+              <span class="ml-2 text-sm text-gray-500">+124 students</span>
+            </div>
+          </div> </a
+        ><a
+          href="../404.html"
+          class="bg-white rounded-xl shadow overflow-hidden"
+        >
+          <img
+            src="../assets/img/aritmatika-banner.png"
+            alt="Course Thumbnail"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <span class="text-sm text-[#7C57FD] font-semibold">Matematika</span>
+            <h4 class="font-semibold mt-2">Aritmatika Dasar</h4>
+            <div class="flex items-center mt-4">
+              <div
+                class="flex -space-x-2 *:inline-block *:h-8 *:w-8 *:rounded-full *:ring-2 *:ring-white"
+              >
+                <img
+                  src="../assets/img/bayu-adi-photo-profile.jpg"
+                  alt="User"
+                />
+                <img
+                  src="../assets/img/yulia-dela-photo-profile.jpg"
+                  alt="User"
+                />
+                <img
+                  src="../assets/img/dzuldean-raafi-photo-profile.jpg"
+                  alt="User"
                 />
               </div>
               <span class="ml-2 text-sm text-gray-500">+124 students</span>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <h3 class="text-xl font-semibold mb-4">History Kesalahan</h3>
     </main>
     <!-- Right Sidebar -->
     <aside
-      class="w-fit shadow-lg h-screen sticky top-0 right-0 flex flex-col items-center py-6 px-10 max-lg:hidden"
+      class="w-3/12 shadow-lg h-screen sticky top-0 flex flex-col items-center py-6 px-10 max-lg:hidden"
     >
       <h1 class="font-bold text-xl">Profil Kamu</h1>
       <img
@@ -212,16 +342,16 @@
         src="../assets/img/rafly-nur-photo-profile.jpg"
         alt=""
       />
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center justify-center">
         <h3 id="greeting" class="font-semibold text-lg greeting"></h3>
         <h3 class="font-semibold text-lg">Rafly Nur</h3>
       </div>
       <h3 class="font-bold text-xl">Leaderboard</h3>
       <ul
-        class="*:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+        class="*:duration-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1 *:space-y-2"
       >
         <li
-          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+          class="hover:bg-gray-200 *:flex *:space-x-3 *:rounded-lg *:items-center *:p-1"
         >
           <a href="../404.html" class="w-full">
             <p class="font-bold">1</p>
@@ -237,7 +367,7 @@
           </a>
         </li>
         <li
-          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+          class="hover:bg-gray-200 *:flex *:space-x-3 *:rounded-lg *:items-center *:p-1"
         >
           <a href="../404.html" class="w-full">
             <p class="font-bold">2</p>
@@ -253,7 +383,7 @@
           </a>
         </li>
         <li
-          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+          class="hover:bg-gray-200 *:flex *:space-x-3 *:rounded-lg *:items-center *:p-1"
         >
           <a href="../404.html" class="w-full">
             <p class="font-bold">3</p>
@@ -269,7 +399,7 @@
           </a>
         </li>
         <li
-          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+          class="hover:bg-gray-200 *:flex *:space-x-3 *:rounded-lg *:items-center *:p-1"
         >
           <a href="../404.html" class="w-full">
             <p>4</p>
@@ -285,7 +415,7 @@
           </a>
         </li>
         <li
-          class="hover:bg-gray-200 *:flex *:space-x-3 space-y-2 *:rounded-lg *:items-center *:p-1"
+          class="hover:bg-gray-200 *:flex *:space-x-3 *:rounded-lg *:items-center *:p-1"
         >
           <a href="../404.html" class="w-full">
             <p>5</p>
@@ -314,6 +444,6 @@
         </li>
       </ul>
     </aside>
-    <script src="./greeting.js"></script>
+    <script src="../js/greeting.js"></script>
   </body>
 </html>
