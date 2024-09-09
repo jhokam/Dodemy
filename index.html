@@ -15,7 +15,7 @@
     />
     <link rel="icon" href="./assets/logo/dodemy.svg" type="image/svg" />
   </head>
-  <body class="bg-[#F8F8F8]">
+  <body class="bg-[#F8F8F8] scroll-smooth">
     <header class="sticky top-0 w-full align-middle bg-[#F8F8F8] z-50">
       <nav class="flex flex-row w-full justify-between py-4 px-12 items-center">
         <button
@@ -42,17 +42,27 @@
         <ul
           class="nav-links flex flex-row gap-14 font-semibold text-sm max-md:hidden"
         >
-          <li><a href="#hero" class="nav-link active">Beranda</a></li>
-          <li><a href="#features" class="nav-link">Fitur</a></li>
-          <li><a href="#courses" class="nav-link">Kelas</a></li>
-          <li><a href="#reviews" class="nav-link">Testimoni</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="hover:scale-110 transition duration-200">
+            <a href="#hero" class="nav-link active">Beranda</a>
+          </li>
+          <li class="hover:scale-110 transition duration-200">
+            <a href="#features" class="nav-link">Fitur</a>
+          </li>
+          <li class="hover:scale-110 transition duration-200">
+            <a href="#courses" class="nav-link">Kelas</a>
+          </li>
+          <li class="hover:scale-110 transition duration-200">
+            <a href="#reviews" class="nav-link">Testimoni</a>
+          </li>
+          <li class="hover:scale-110 transition duration-200">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
         </ul>
 
         <!-- Login button -->
         <a
           href="./auth/login.html"
-          class="font-semibold text-sm py-2 px-6 border border-black rounded-full hover:bg-gray-200"
+          class="font-semibold text-sm py-2 px-6 border border-black rounded-full duration-200 hover:bg-gray-200"
         >
           Masuk
         </a>
@@ -184,7 +194,7 @@
       <!-- Features -->
       <section id="features" class="pt-8">
         <div class="flex flex-col text-center gap-4">
-          <h4 class="text-sm">Fitur Spesial</h4>
+          <p class="text-sm">Fitur Spesial</p>
           <h1
             class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold"
           >
@@ -193,7 +203,7 @@
           </h1>
 
           <!-- Cards container -->
-          <h6 class="self-end mr-10 text-xs">Geser ></h6>
+          <p class="self-end mr-10 text-xs">Geser ></p>
           <div class="overflow-x-auto scroll-smooth snap-x snap-mandatory">
             <div class="pl-56 flex gap-24 w-max">
               <!-- Card -->
@@ -910,9 +920,9 @@
           <div
             class="flex flex-col w-full max-w-[23.75rem] px-8 py-10 bg-white border-[.0938rem] shadow rounded-2xl gap-8"
           >
-            <div class="flex font-bold text-4xl items-center gap-2">
-              <h1 class="w-4 h-4 rounded-full bg-[#7C57FD]"></h1>
-              Semua
+            <div class="flex items-center gap-2">
+              <div class="w-4 h-4 rounded-full bg-[#7C57FD]"></div>
+              <h1 class="font-bold text-4xl">Semua</h1>
             </div>
             <div class="flex flex-col gap-8">
               <!-- Price -->
@@ -969,9 +979,9 @@
           <div
             class="flex flex-col w-full max-w-[23.75rem] px-8 py-10 bg-white border-[.0938rem] shadow rounded-2xl gap-8"
           >
-            <div class="flex font-bold text-4xl items-center gap-2">
-              <h1 class="w-4 h-4 rounded-full bg-[#7C57FD]"></h1>
-              Siswa
+            <div class="flex items-center gap-2">
+              <div class="w-4 h-4 rounded-full bg-[#7C57FD]"></div>
+              <h1 class="font-bold text-4xl">Siswa</h1>
             </div>
             <div class="flex flex-col gap-8">
               <!-- Price -->
@@ -1033,9 +1043,9 @@
           <div
             class="flex flex-col w-full max-w-[23.75rem] px-8 py-10 bg-white border-[.0938rem] shadow rounded-2xl gap-8"
           >
-            <div class="flex font-bold text-4xl items-center gap-2">
-              <h1 class="w-4 h-4 rounded-full bg-[#7C57FD]"></h1>
-              Pro
+            <div class="flex items-center gap-2">
+              <div class="w-4 h-4 rounded-full bg-[#7C57FD]"></div>
+              <h1 class="font-bold text-4xl">Pro</h1>
             </div>
             <div class="flex flex-col gap-8">
               <!-- Price -->
@@ -1205,11 +1215,11 @@
       </section>
     </main>
 
-    <footer class="mt-28 grid">
+    <footer class="mt-28">
       <div class="flex justify-between px-14 py-10">
         <div class="flex flex-col gap-4">
           <a
-            href=""
+            href="#hero"
             class="flex items-center gap-2 font-jakarta font-bold text-2xl"
             ><img
               src="assets/logo/dodemy-purple.svg"
@@ -1270,6 +1280,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><img
+              class="hover:scale-110 transition duration-200"
               src="/assets/logos/gmail.svg"
               alt="Logo of Gmail"
               width="25px"
@@ -1279,6 +1290,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><img
+              class="hover:scale-110 transition duration-200"
               src="/assets/logos/instagram.svg"
               alt="Logo of Instagram"
               width="25px"
@@ -1288,12 +1300,14 @@
             target="_blank"
             rel="noopener noreferrer"
             ><img
+              class="hover:scale-110 transition duration-200"
               src="/assets/logos/whatsapp.svg"
               alt="Logo of Whatsapp"
               width="25px"
           /></a>
           <a href="tel:+6289670288120" target="_blank" rel="noopener noreferrer"
             ><img
+              class="hover:scale-110 transition duration-200"
               src="/assets/icons/call-calling.svg"
               alt="Icon of Phone Call"
               width="25px"
