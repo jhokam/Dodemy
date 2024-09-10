@@ -17,6 +17,89 @@
     <link rel="icon" href="../assets/logo/dodemy.svg" type="image/svg" />
   </head>
   <body class="bg-gray-100 text-[#0F0A1E] overflow-x-hidden flex">
+    <!-- Sidebar Mobile -->
+    <div
+      id="sidebar"
+      class="bg-gray-100 hidden fixed w-screen h-screen z-10 flex flex-col p-6 justify-between"
+    >
+      <!-- Dashboard Menu -->
+      <div class="*:p-2 *:flex space-y-2 *:rounded-xl">
+        <button type="button" onclick="closeSidebarMobile()">
+          <img src="../assets/icons/close.svg" alt="Close Button" />
+        </button>
+        <button
+          type="button"
+          onclick="closeSidebarMobile()"
+          class="text-[#7C57FD] bg-gray-200 rounded-xl w-full"
+        >
+          <img
+            src="../assets/icons/home.svg"
+            alt="Icon of Dashboard Menu"
+            class="h-6 w-6 mr-3"
+          />
+          Dashboard
+        </button>
+        <!-- Daily Learn Menu -->
+        <a href="../404.html" class="text-gray-700 hover:bg-gray-200">
+          <img
+            src="../assets/icons/daily-learn.svg"
+            alt="Icon of Daily Learn Menu"
+            class="h-6 w-6 mr-3"
+          />
+          Belajar Harian
+        </a>
+        <!-- Explore Menu -->
+        <a
+          href="../404.html"
+          class="text-gray-700 hover:bg-gray-200 rounded-xl"
+        >
+          <img
+            src="../assets/icons/explore-course.svg"
+            alt="Icon of Explore Menu"
+            class="h-6 w-6 mr-3"
+          />
+          Pelajari Kursus
+        </a>
+      </div>
+      <div id="sidebar-footer" class="space-y-2">
+        <a
+          href="../404.html"
+          class="border-2 rounded-lg flex space-x-3 p-2 items-center lg:hidden"
+        >
+          <img
+            class="size-14 rounded-full"
+            src="../assets/img/rafly-nur-photo-profile.jpg"
+            alt="Photo Profile"
+          />
+          <div>
+            <p class="font-semibold">Rafly Nur</p>
+            <p>20 Point</p>
+          </div>
+        </a>
+        <a
+          href="../404.html"
+          class="flex items-center px-4 py-2 text-gray-700 duration-200 hover:bg-gray-200 rounded-xl"
+        >
+          <img
+            class="pr-2"
+            src="../assets/icons/setting.svg"
+            alt="Logo Pengaturan"
+          />
+          Pengaturan
+        </a>
+        <a
+          href="../index.html"
+          class="flex items-center px-4 py-2 text-[#FF5959] duration-200 hover:bg-gray-200 rounded-xl"
+        >
+          <img
+            class="pr-2"
+            src="../assets/icons/logout.svg"
+            alt="Logo Keluar"
+          />
+          Keluar
+        </a>
+      </div>
+    </div>
     <!-- Left Sidebar -->
     <aside
       class="w-fit shadow-lg px-5 h-screen flex flex-col justify-between sticky top-0 left-0 max-sm:hidden p-2"
@@ -37,10 +120,12 @@
         <nav
           class="mt-8 space-y-2 *:duration-200 *:flex *:items-center *:px-4 *:py-2 *:rounded-xl"
         >
+          <!-- Dashboard Menu -->
           <a href="#" class="text-[#7C57FD] bg-gray-200 rounded-xl">
             <img src="../assets/icons/home.svg" alt="" class="h-6 w-6 mr-3" />
             Dashboard
           </a>
+          <!-- Daily Learn Menu -->
           <a href="../404.html" class="text-gray-700 hover:bg-gray-200">
             <img
               src="../assets/icons/daily-learn.svg"
@@ -49,6 +134,7 @@
             />
             Belajar Harian
           </a>
+          <!-- Explore Menu -->
           <a
             href="../404.html"
             class="text-gray-700 hover:bg-gray-200 rounded-xl"
@@ -103,8 +189,10 @@
     </aside>
     <!-- Main Content -->
     <main class="flex-1 overflow-x-auto p-6">
-      <div class="flex">
+      <!-- Header Search -->
+      <div id="header" class="flex">
         <button
+          onclick="openSidebarMobile()"
           class="text-gray-700 focus:outline-none max-sm:visible sm:hidden"
         >
           <img
@@ -130,7 +218,7 @@
         </div>
       </div>
       <!-- Banner -->
-      <div class="bg-[#7C57FD] text-white rounded-3xl p-8 my-6">
+      <div class="bg-[#7C57FD] text-white rounded-3xl p-8 my-6 mt-20">
         <h2 class="text-2xl 2xl:text-3xl font-bold mb-2">
           Pertajam skill mu dengan Dodemy+
         </h2>
@@ -444,5 +532,6 @@
       </ul>
     </aside>
     <script src="../js/greeting.js"></script>
+    <script src="../js/sidebar-mobile.js"></script>
   </body>
 </html>
